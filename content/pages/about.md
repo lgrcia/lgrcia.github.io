@@ -5,7 +5,7 @@ menu: main
 
 ## I'm Lionel Garcia
 
-PhD student in astronomy at the [University of Liège](https://www.uliege.be) under the supervision of [*Michael Gillon*](https://www.uliege.be/cms/c_9054334/fr/repertoire?uid=u193465) and within the [SPECULOOS](https://www.speculoos.uliege.be) and TRAPPIST projects/consortia.
+PhD student in astronomy at the [University of Liège](https://www.uliege.be) under the supervision of [*Michaël Gillon*](https://www.uliege.be/cms/c_9054334/fr/repertoire?uid=u193465) and within the [SPECULOOS](https://www.speculoos.uliege.be) and TRAPPIST projects/consortia.
 
 The ultimate goal of my research is to contribute to the **first detailed atmospheric characterization of a terrestrial exoplanet**. While telescopes are steadily growing in size & sensitivity, I am particularly interested in those instrument-agnostic challenges that will limit our understanding if left unsolved:
 - The **detection of terrestrial planets** around active stars
