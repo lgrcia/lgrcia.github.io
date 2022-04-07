@@ -1,0 +1,31 @@
+baseURL = 'http://lgrcia.io/'
+languageCode = 'en-us'
+title = 'lgrcia'
+theme = 'hugo-theme-codex'
+tags = ["website", "academic", "research", "astronomy", "code"]
+
+
+[[menu.main]]
+  identifier = "home"
+  name = " home"
+  title = "Home"
+  url = "/"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[params]
+  github = "https://github.com/lgrcia"
+  email = "mailto:lionel_garcia@live.fr"
+  iconOrder = ["GitHub", "Email"]

@@ -1,0 +1,87 @@
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .code-title {
+        margin-bottom: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: 600;
+        font-style: italic;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .code-text {
+        max-width: 20rem;
+        line-height: 1.5;
+    }
+
+    .code-image {
+        max-width: 400px;
+    }
+
+    .star {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        color: lightgray;
+        cursor: pointer;
+        text-decoration: none !important;
+    }
+
+    .star svg {
+        width:20px;
+        stroke-width: 2.8px;
+        vertical-align: bottom;
+        margin-right: 2px;
+    }
+
+    .star:hover {
+        color:grey
+    }
+    
+
+</style>
+
+<script>
+    // Get and set number of stars
+    var request = new XMLHttpRequest();
+
+    function setStars() {
+        var el = document.getElementById("stars_{{.Get `name`}}")
+        var responseObj = JSON.parse(this.responseText);
+        const stars = responseObj.stargazers_count
+        el.innerHTML = stars
+    }
+
+    request.onload = setStars;
+    request.open('get', 'https://api.github.com/repos/lgrcia/{{.Get `name`}}')
+    request.send()
+
+</script>
+
+<div class="container" style="flex-direction: {{.Get `direction`}}">
+    <div class="code-image"><img src="{{.Get `img`}}"></div>
+    <div>
+        <div class="code-title">
+            <span href="{{.Get `href`}}">{{.Get "name"}} <span class="fancy">.</span></span>
+            <a class="star" href="https://github.com/lgrcia/{{.Get `name`}}"><i data-feather="star"></i><span id="stars_{{.Get `name`}}"></span></a>
+        </div>
+        <div class="code-text">{{.Inner}}</div>
+        <!-- Place this tag where you want the button to render. -->
+        <br>
+    </div>
+</div>
+
+<script>
+    feather.replace()
+  </script>

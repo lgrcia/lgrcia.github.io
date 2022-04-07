@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+JP&display=swap');
+
+$accent: #1e88e5;
+
+.nav {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline !important;
+}
+
+a:hover {
+    color: $accent;
+} 
+
+.nav li {
+    margin-bottom: 12px;
+}
+
+.nav li a{
+    text-transform: lowercase;
+}
+
+.fancy {
+    color: $accent;
+}
+
+h1, h2 {
+    letter-spacing: 0.1px !important;
+}
+
+.social-icons__link {
+    margin-right: 0px !important;
+}
+
+.anchor, h2 {
+    text-decoration: none !important;
+}
+
+a {
+    text-decoration-color: $accent !important;
+}
+
+// .post h2 {
+//     margin-bottom: 15px;
+//     font-family: Georgia, 'Times New Roman', Times, serif;
+//     font-size: 25px;
+//     font-weight: 600;
+//     font-style: italic;
+//     vertical-align: middle;
+//     display: inline-block;
+// }
+
+.anchor {
+    // font-size:0px;
+    // opacity: 0;
+    color: $accent !important;
+}
+
+.post p {
+    line-height: 1.5 !important;
+} 
+
+// h2::after {
+//     content: " .";
+//     color: $accent;
+// }
