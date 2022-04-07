@@ -1,4 +1,4 @@
-baseURL = 'http://lgrcia.io/'
+baseURL = 'https://lgrcia.github.io'
 languageCode = 'en-us'
 title = 'lgrcia'
 theme = 'hugo-theme-codex'
