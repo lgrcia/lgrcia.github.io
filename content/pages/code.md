@@ -1,7 +1,5 @@
 ---
 title: "Code"
-date: 2022-04-07T11:04:10+02:00
-draft: true
 menu: main
 ---
 Here is a selection of codes I wrote for astronomy, mainly during my PhD thesis. All of them are hosted on [Github public repositories](https://github.com/lgrcia/).

@@ -1,7 +1,5 @@
 ---
 title: "About"
-date: 2022-04-07T10:41:12+02:00
-draft: true
 menu: main
 ---
 
