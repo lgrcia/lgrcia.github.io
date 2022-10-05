@@ -3,5 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     {{ $title := print .Site.Title " | " .Title }}
+    <title>{{$title}}</title>
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+    <link rel="icon" href="images/lgrcia.svg" type="image/svg+xml">
 </head>
