@@ -31,7 +31,6 @@ margin-top: -10rem;
 }
 
 .main {
-    margin: 50px;
     max-width: 1000px;
     margin: auto;
 }
@@ -40,21 +39,21 @@ margin-top: -10rem;
     width:70%
 }
 
+.main > div:first-child {
+    margin: 1.5rem;
+}
 
 @media only screen and (max-width: 1000px) {
     .top-margin{
         margin-top: 0rem;
     }
+
     .hide-medium {
         display: none;
     }
 
     .header-top {
         margin-top: 1rem;
-    }
-
-    .main {
-        margin: 1.5rem;
     }
 
     .content {
