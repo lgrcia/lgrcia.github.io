@@ -4,6 +4,7 @@ date: 2022-02-01T00:00:00+00:00
 draft: false
 short: "Modular and transparent image processing pipelines"
 first: true
+show_title: true
 code: "https://github.com/lgrcia/prose"
 paper: "https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.4817G/abstract"
 ---

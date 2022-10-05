@@ -1,6 +1,6 @@
 ---
 title: "nuance"
-date: 2022-09-16T14:42:41+02:00
+date: 2022-07-01T00:00:00+00:00
 draft: true
 short: "Searching for transits in correlated noise"
 ---

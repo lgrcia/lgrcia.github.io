@@ -246,3 +246,26 @@ h1 {
     text-align: center;
     /* margin: 2rem; */
   }
+
+.draft {
+    filter: grayscale(1);
+    opacity: 0.4;
+}
+
+.draft-text {
+    display: none;
+}
+
+.draft .draft-text {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-family: Arial;
+    font-weight: normal;
+    opacity: 50%;
+    /* vertical-align: 1.5rem;
+    margin-left: -1rem;
+    margin-top: -1.5rem; */
+
+    margin-bottom: -1.2rem;
+}

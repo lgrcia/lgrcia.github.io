@@ -7,15 +7,16 @@
 
 <div class="projects-cards">
     {{ range .Pages.ByPublishDate }}
-    <div class="project-card">
-        <a href="{{ .RelPermalink }}" class="center">
-            <svg
-            data-src="{{.Site.BaseURL}}/images/{{.File.TranslationBaseName}}.svg"
-            data-cache="disabled"           
-            class="test"
-             ></svg>
-            <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}
-                {{if .Params.first}}<span style="font-size: 1rem">*</span>{{ end }}</a></h3>
+    {{ $url := cond .Draft "." .RelPermalink }}
+    <div class="project-card {{ if .Draft }}draft{{ end }}">
+        <a href="{{ $url }}" class="center">
+            <svg data-src="{{.Site.BaseURL}}/images/{{.File.TranslationBaseName}}.svg" data-cache="disabled"
+                class="test"></svg>
+            <span class="draft-text">draft</span>
+            <h3>
+                <a class="title" href="{{$url}}">{{ .Title }}
+                    {{if .Params.first}}<span style="font-size: 1rem">*</span>{{ end }}</a>
+            </h3>
             <span class="short">
                 <p>{{.Params.short}}</p>
             </span>

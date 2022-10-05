@@ -6,6 +6,7 @@ author = "Lionel J. Garcia"
 
 PygmentsCodeFences = true
 PygmentsStyle = "abap"
+buildDrafts = true
 
 [menu]
   [[menu.main]]
