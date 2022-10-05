@@ -4,7 +4,7 @@ date: 2022-02-01T00:00:00+00:00
 draft: false
 short: "Modular and transparent image processing pipelines"
 first: true
-show_title: true
+
 code: "https://github.com/lgrcia/prose"
 paper: "https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.4817G/abstract"
 ---
@@ -15,11 +15,19 @@ In Astronomy, a large number of observations lead to 2D images, often recorded i
 
 To success with this approach, prose features three key objects `Image`, `Block` and `Sequence`
 
-![](/images/pipeline.png#650)
+{{< rawhtml >}}
+<div style="text-align:center">
+    <img src="/images/pipeline.png" width="650px"></img>
+</div>
+{{< /rawhtml >}}
 
 An `Image` object contains the `Image.data` as well as metadata in `Image.header`.
 
-![](/images/image.png#320)
+{{< rawhtml >}}
+<div style="text-align:center">
+ <img src="/images/image.png" width="320px"></img>
+</div>
+{{< /rawhtml >}}
 
 A `Block` is a single unit of processing acting on the `Image` object, which can read and write any of its attributes (or modify its data). Finally a `Sequence` is a succesion of `Block`.
 

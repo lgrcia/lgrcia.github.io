@@ -269,3 +269,7 @@ h1 {
 
     margin-bottom: -1.2rem;
 }
+
+.content img {
+    text-align: center;
+}
