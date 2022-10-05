@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" . }}
+
+<body>
+    <div class="main">
+        <div style="text-align: left;">
+            {{ partial "header.html" . }}
+            <main>
+                {{ block "main" . }}{{ end }}
+            </main>
+        </div>
+        {{ partial "script.html" . }}
+    </div>
+</body>
+
+</html>

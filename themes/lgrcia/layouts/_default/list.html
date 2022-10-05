@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<div class="top-margin" style="text-align:center; margin-bottom: 5rem">
+    <h1 syle="margin-top:0px">{{ .Title }}</h1>
+    <div style="color:grey; font-family: var(--font-primary);">* with first-authored publication</div>
+</div>
+
+<div class="projects-cards">
+    {{ range .Pages.ByPublishDate }}
+    <div class="project-card">
+        <a href="{{ .RelPermalink }}" class="center">
+            <svg
+            data-src="{{.Site.BaseURL}}/images/{{.File.TranslationBaseName}}.svg"
+            data-cache="disabled"           
+            class="test"
+             ></svg>
+            <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}
+                {{if .Params.first}}<span style="font-size: 1rem">*</span>{{ end }}</a></h3>
+            <span class="short">
+                <p>{{.Params.short}}</p>
+            </span>
+        </a>
+    </div>
+    {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
+
+{{ end }}

@@ -1,0 +1,14 @@
+<div id="nav">
+    <nav class="capital-list" style="text-align: right;">
+        {{ $current := . }}
+        {{ range .Site.Menus.main }}
+          {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+          {{ $active = or $active (and (eq .Name "projects") (eq $current.Section "projects")) }}
+          {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+          {{ $ext := or (eq .Name "publications" .) (eq .Name "code")}}
+          {{ $ext := or $ext (eq .Name "cv")}}
+          <a href="{{ .URL }}" class="nav-link capital-list-item {{ if $active }}active{{ end }}" target="{{ if $ext}}_blank{{ else }}_self{{ end }}">{{.Name}}</a>
+        {{ end }}
+    </nav>
+    </nav>
+</div>
