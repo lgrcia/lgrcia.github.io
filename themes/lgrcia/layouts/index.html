@@ -13,7 +13,7 @@
   <div style="z-index: -1; position: relative;flex-grow: 1;flex-shrink: 3; filter:grayscale(100%) constrast(120%);">
     <!-- <img src="{{.Site.BaseURL}}/images/portrait.jpg" width="250px"> -->
     <div id="star" style="opacity:0; overflow:hidden;position: relative;width: 100%">
-      <div id="planet" style="display:none;position: relative; top:300px; right: -1000px">
+      <div id="planet" style="display:none;position: relative; right: -1000px">
         <div
           style="position: relative; background-color:black; width:30px; height:30px; border-radius: 50%;filter: blur(1px);margin-left:5px; margin-top:-35px;">
         </div>
@@ -33,13 +33,14 @@
           var y = e.pageY;
           var dx = x - (innerWidth / 2)
           planet.style.left = 1.2 * dx * (banner.clientWidth) / innerWidth + banner.clientWidth / 2 + "px";
+          planet.style.top = 0.3*banner.clientWidth + "px"
         }
         resize_banner()
         let star = document.getElementById("star");
         let planet = document.getElementById("planet");
         let x0 = star.getBoundingClientRect().left;
         addEventListener('mousemove', (e) => { move_planet(e) });
-        addEventListener('touchmove', (e) => { move_planet(e) });
+        addEventListener('touchmove', (e) => { move_planet(e.changedTouches[0]); console.log(e.changedTouches[0]) });
         addEventListener('resize', (event) => {
           resize_banner()
         });
