@@ -5,5 +5,5 @@
     {{ $title := print .Site.Title " | " .Title }}
     <title>{{$title}}</title>
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
-    <link rel="icon" href="images/lgrcia.svg" type="image/svg+xml">
+    <link rel="icon" href="{{.Site.BaseURL}}/images/lgrcia.svg" type="image/svg+xml">
 </head>
