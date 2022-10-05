@@ -1,6 +1,6 @@
 baseURL = 'https://lgrcia.github.io'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'lgrcia'
 theme = 'lgrcia'
 author = "Lionel J. Garcia"
 
