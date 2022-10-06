@@ -17,12 +17,18 @@ buildDrafts = true
     name = "publications"
     url = "https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-4296-2246&sort=date%20desc%2C%20bibcode%20desc&p_=0"
     weight = 2
+    [menu.main.params]
+      alt = "ADS"
   [[menu.main]]
     name = "code"
     url = "https://github.com/lgrcia"
     weight = 4
+    [menu.main.params]
+      alt = "Github"
   [[menu.main]]
     url = "https://github.com/lgrcia/cv/raw/main/LJGarcia_resume.pdf"
     name = "cv"
     weight = 5
+    [menu.main.params]
+      alt = "PDF"
 
