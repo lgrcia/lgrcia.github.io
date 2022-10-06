@@ -15,7 +15,7 @@
     <div id="star" style="opacity:0; overflow:hidden;position: relative;width: 100%">
       <div id="planet" style="display:none;position: relative; right: -1000px">
         <div
-          style="position: relative; background-color:black; width:100%; height:100%; border-radius: 50%;filter: blur(1px);margin-left:5px; margin-top:-35px;">
+          style="position: relative; background-color:black; width:100%; height:100%; border-radius: 50%;filter: blur(1px);margin-left:5px;">
         </div>
       </div>
       <video src="{{.Site.BaseURL}}/images/sun.mp4" autoplay muted loop playsinline
@@ -41,6 +41,7 @@
           p = 0.035*banner.clientWidth
           planet.style.height = p + "px"
           planet.style.width = p + "px"
+          planet.style.marginTop = - p + "px"
         }
         resize_banner()
         let x0 = video.getBoundingClientRect().left;
