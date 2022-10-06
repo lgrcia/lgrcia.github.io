@@ -10,12 +10,12 @@
     <h1>I look at planets around</br>small and cool stars</h1>
     <div class="short index-h2" style="color: gray; font-family: var(--font-primary) !important;">in the search for life</div>
   </div>
-  <div style="z-index: -1; position: relative;flex-grow: 1;flex-shrink: 3; filter:grayscale(100%) constrast(120%);">
+  <div id="video" style="z-index: -1; position: relative;flex-grow: 1;flex-shrink: 3; filter:grayscale(100%) constrast(120%);">
     <!-- <img src="{{.Site.BaseURL}}/images/portrait.jpg" width="250px"> -->
     <div id="star" style="opacity:0; overflow:hidden;position: relative;width: 100%">
       <div id="planet" style="display:none;position: relative; right: -1000px">
         <div
-          style="position: relative; background-color:black; width:30px; height:30px; border-radius: 50%;filter: blur(1px);margin-left:5px; margin-top:-35px;">
+          style="position: relative; background-color:black; width:100%; height:100%; border-radius: 50%;filter: blur(1px);margin-left:5px; margin-top:-35px;">
         </div>
       </div>
       <video src="{{.Site.BaseURL}}/images/sun.mp4" autoplay muted loop playsinline
@@ -24,9 +24,16 @@
       <script>
         let DH = 280
         let banner = document.getElementById("banner");
+        let sentence = document.getElementById("sentence");
+        let video = document.getElementById("video");
+        let star = document.getElementById("star");
+        let planet = document.getElementById("planet");
         console.log(banner.getBoundingClientRect().top)
+        let video_height = 0
+        let p = 0
         resize_banner = () => {
           banner.style.height = innerHeight - banner.getBoundingClientRect().top - 80 + "px"
+          video_height = banner.clientHeight - sentence.clientHeight
         }
         move_planet = (e) => {
           var x = e.pageX;
@@ -34,11 +41,13 @@
           var dx = x - (innerWidth / 2)
           planet.style.left = 1.2 * dx * (banner.clientWidth) / innerWidth + banner.clientWidth / 2 + "px";
           planet.style.top = 0.3*banner.clientWidth + "px"
+          p = 0.035*banner.clientWidth
+          planet.style.height = p + "px"
+          planet.style.width = p + "px"
+          console.log(planet.style.width)
         }
         resize_banner()
-        let star = document.getElementById("star");
-        let planet = document.getElementById("planet");
-        let x0 = star.getBoundingClientRect().left;
+        let x0 = video.getBoundingClientRect().left;
         addEventListener('mousemove', (e) => { move_planet(e) });
         addEventListener('touchmove', (e) => { move_planet(e.changedTouches[0]); console.log(e.changedTouches[0]) });
         addEventListener('resize', (event) => {
