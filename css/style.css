@@ -68,7 +68,7 @@ margin-top: -10rem;
     justify-content: space-between;
 }
 
-.capital-list-item {
+.nav-item {
     display: block;
     font-family: Helvetica, sans-serif;
     text-transform: uppercase;
@@ -273,3 +273,15 @@ h1 {
 .content img {
     text-align: center;
 }
+
+.nav-item span {
+    display: none;
+    font-size: 0.8rem;
+    color:black; 
+    opacity: 0.3;
+} 
+
+.nav-item:hover span {
+    display: inline-block;
+    margin-right: 3px;
+} 
