@@ -28,12 +28,9 @@
         let video = document.getElementById("video");
         let star = document.getElementById("star");
         let planet = document.getElementById("planet");
-        console.log(banner.getBoundingClientRect().top)
-        let video_height = 0
         let p = 0
         resize_banner = () => {
           banner.style.height = innerHeight - banner.getBoundingClientRect().top - 80 + "px"
-          video_height = banner.clientHeight - sentence.clientHeight
         }
         move_planet = (e) => {
           var x = e.pageX;
@@ -44,7 +41,6 @@
           p = 0.035*banner.clientWidth
           planet.style.height = p + "px"
           planet.style.width = p + "px"
-          console.log(planet.style.width)
         }
         resize_banner()
         let x0 = video.getBoundingClientRect().left;
