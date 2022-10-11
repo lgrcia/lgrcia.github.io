@@ -116,7 +116,7 @@ a:active { text-decoration: none; }
 .project-card .title {
     font-family: var(--font-primary);
     font-size: 1.8rem;
-    color: var(--black) !t;
+    color: var(--black) !important;
     font-weight: bold;
 }
 
@@ -256,8 +256,8 @@ h1 {
 }
 
 .project-icons {
-    margin-top: 15px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 
