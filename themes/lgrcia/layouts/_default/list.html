@@ -2,13 +2,13 @@
 
 <div class="top-margin" style="text-align:center; margin-bottom: 5rem">
     <h1 syle="margin-top:0px">{{ .Title }}</h1>
-    <div style="color:grey; font-family: var(--font-primary);">* with first-authored publication</div>
+    <div style="color:grey; font-family: var(--font-primary); margin-top: -15px;">* with first-authored publication</div>
 </div>
 
 <div class="projects-cards">
     {{ range .Pages.ByPublishDate }}
     {{ $url := cond .Draft "." .RelPermalink }}
-    <div class="project-card {{ if .Draft }}draft{{ end }}">
+    <div class="project-card {{ if .Draft }}draft{{ end }}" style="width:260px; padding: 1rem">
         <a href="{{ $url }}" class="center">
             <svg data-src="{{.Site.BaseURL}}/images/{{.File.TranslationBaseName}}.svg" data-cache="disabled"
                 class="test"></svg>
@@ -17,9 +17,9 @@
                 <a class="title" href="{{$url}}">{{ .Title }}
                     {{if .Params.first}}<span style="font-size: 1rem">*</span>{{ end }}</a>
             </h3>
-            <span class="short">
-                <p>{{.Params.short}}</p>
-            </span>
+            <div class="short">
+                {{.Params.short}}
+            </div>
         </a>
     </div>
     {{ end }}

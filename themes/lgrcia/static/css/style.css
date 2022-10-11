@@ -9,6 +9,7 @@
 :root {
     /* --color: #d46a6a; */
     --color: #b65b6f;
+    --colorrbg: 182, 91, 111;
     --black: rgb(41, 41, 41);
     --font-primary: 'Lora', serif;
     --monospace: "SFMono-Regular", "Menlo" ,"Consolas","Monaco","Liberation Mono", "Lucida Console", monospace;
@@ -17,6 +18,14 @@
 body {
     margin: 0px;
 }
+
+::-moz-selection { /* Code for Firefox */
+    background: rgba(var(--colorrbg), 0.3);
+  }
+  
+  ::selection {
+    background: rgba(var(--colorrbg), 0.3);
+  }
 
 .top-margin{
 margin-top: -10rem;
@@ -95,9 +104,7 @@ a:active { text-decoration: none; }
 
 
 .project-card {
-    width: 260px;
     text-align: center;
-    padding: 1rem;
 }
 
 .center {
@@ -109,7 +116,7 @@ a:active { text-decoration: none; }
 .project-card .title {
     font-family: var(--font-primary);
     font-size: 1.8rem;
-    color: var(--black) !important;
+    color: var(--black) !t;
     font-weight: bold;
 }
 
@@ -212,9 +219,10 @@ h1 {
 }
 
 .content p {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    line-height: 1.5;
-    -moz-osx-font-smoothing: grayscale
+    font-family: var(--font-primary);
+    /* font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; */
+    line-height: 1.8;
+    /* -moz-osx-font-smoothing: grayscale */
 }
 
 .content code {
@@ -237,7 +245,21 @@ h1 {
 
 .project-icons a {
     margin: 0px 5px;
+    color: black;
+    opacity: 0.5;
 }
+
+.project-icons a:visited {
+    margin: 0px 5px;
+    color: black;
+    opacity: 0.5;
+}
+
+.project-icons {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
 
 .footer {
     text-align: center;
@@ -285,3 +307,29 @@ h1 {
     display: inline-block;
     margin-right: 3px;
 } 
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.short {
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.short.post {
+    margin-top: 12px;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.content p:first-child::first-letter {
+    padding: 0 0rem;
+    margin: 0 .5rem 0 0;
+    
+    color: var(--color);
+    font-size: 4.1rem;
+    float: left;
+    line-height: 1;
+    font-weight: 100;
+  }
