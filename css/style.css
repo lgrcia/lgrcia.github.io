@@ -4,31 +4,32 @@
     font-weight: 400;
     src: url("Lora-latin.woff") format('woff');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  
+}
+
 :root {
     /* --color: #d46a6a; */
     --color: #b65b6f;
     --colorrbg: 182, 91, 111;
     --black: rgb(41, 41, 41);
     --font-primary: 'Lora', serif;
-    --monospace: "SFMono-Regular", "Menlo" ,"Consolas","Monaco","Liberation Mono", "Lucida Console", monospace;
-  }
+    --monospace: "SFMono-Regular", "Menlo", "Consolas", "Monaco", "Liberation Mono", "Lucida Console", monospace;
+}
 
 body {
     margin: 0px;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+    /* Code for Firefox */
     background: rgba(var(--colorrbg), 0.3);
-  }
-  
-  ::selection {
-    background: rgba(var(--colorrbg), 0.3);
-  }
+}
 
-.top-margin{
-margin-top: -10rem;
+::selection {
+    background: rgba(var(--colorrbg), 0.3);
+}
+
+.top-margin {
+    margin-top: -10rem;
 }
 
 .hide-medium {
@@ -36,7 +37,7 @@ margin-top: -10rem;
 }
 
 .header-top {
-    margin-top:4rem;
+    margin-top: 4rem;
 }
 
 .main {
@@ -45,15 +46,15 @@ margin-top: -10rem;
 }
 
 .content {
-    width:70%
+    width: 70%
 }
 
-.main > div:first-child {
+.main>div:first-child {
     margin: 1.5rem;
 }
 
 @media only screen and (max-width: 1000px) {
-    .top-margin{
+    .top-margin {
         margin-top: 0rem;
     }
 
@@ -66,9 +67,9 @@ margin-top: -10rem;
     }
 
     .content {
-        width:100%
+        width: 100%
     }
-  }
+}
 
 .header {
     width: 100%;
@@ -85,20 +86,41 @@ margin-top: -10rem;
     font-weight: 100;
 }
 
-.capital-list{
+.capital-list {
     line-height: 1.5;
 }
 
 /* NAV */
 
-a {color: var(--black)}
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; color: var(--black)}
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
+a {
+    color: var(--black)
+}
 
-#nav .nav-link:hover {color: var(--color)}
-#nav .nav-link.active {text-decoration: underline; color: var(--color)}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--black)
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+#nav .nav-link:hover {
+    color: var(--color)
+}
+
+#nav .nav-link.active {
+    text-decoration: underline;
+    color: var(--color)
+}
 
 /* PROJECT CARD(S) */
 
@@ -111,7 +133,7 @@ a:active { text-decoration: none; }
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 .project-card .title {
     font-family: var(--font-primary);
@@ -194,7 +216,7 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.vert-head{
+.vert-head {
     position: absolute;
     left: -61px;
     font-size: 1.4rem;
@@ -208,21 +230,33 @@ h1 {
 
 /* CONTENT */
 
-.content a {text-decoration: none; color: var(--color)}
-.content a:visited {text-decoration: none; color: var(--color)}
+.content a {
+    text-decoration: none;
+    color: var(--color)
+}
+
+.content a:visited {
+    text-decoration: none;
+    color: var(--color)
+}
 
 .content {
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.95rem;
     line-height: 1.5;
     margin: auto;
 }
 
+.content p:first-child {
+    margin-top: 0;
+}
+
 .content p {
     font-family: var(--font-primary);
-    /* font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; */
     line-height: 1.8;
-    /* -moz-osx-font-smoothing: grayscale */
+    font-size: 1rem;
+    margin: 1.875em 0;
 }
 
 .content code {
@@ -237,7 +271,7 @@ h1 {
 
 .content img {
     max-width: 100%;
-} 
+}
 
 .content h1 {
     font-size: 2.2rem;
@@ -262,7 +296,7 @@ h1 {
     color: gray;
     text-align: center;
     /* margin: 2rem; */
-  }
+}
 
 .draft {
     filter: grayscale(1);
@@ -294,14 +328,14 @@ h1 {
 .nav-item span {
     display: none;
     font-size: 0.8rem;
-    color:black; 
+    color: black;
     opacity: 0.3;
-} 
+}
 
 .nav-item:hover span {
     display: inline-block;
     margin-right: 3px;
-} 
+}
 
 .project-card h3 {
     margin-bottom: 10px;
@@ -319,15 +353,15 @@ h1 {
 }
 
 .content p:first-child::first-letter {
-    padding: 0 0rem;
-    margin: 0 .5rem 0 0;
-    
+    padding-right: .2em;
+    padding-top: 9px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--color);
-    font-size: 4.1rem;
+    font-size: 57px;
     float: left;
     line-height: 1;
-    font-weight: 100;
-  }
+    font-weight: 600;
+}
 
 .content a {
     color: inherit;
@@ -336,7 +370,7 @@ h1 {
 
 .content a:visited {
     color: inherit
-} 
+}
 
 .content a:hover {
     color: var(--color);
