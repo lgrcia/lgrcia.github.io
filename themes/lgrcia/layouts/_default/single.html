@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="top-margin" style="text-align: center; line-height: 1.6; width: 100%">
     <div class="project-card {{ if .Draft }}draft{{ end }}" style="display: inline-block; max-width:350px">
-        <h1>{{ .Title }}</h1>
+        <h1 class="project-title" style="font-size: 2.3rem;">{{ .Title }}</h1>
         <!-- <img src="{{.Site.BaseURL}}/images/{{.File.TranslationBaseName}}.svg" width="350px"> -->
         <svg
         data-src="{{.Site.BaseURL}}/images/{{.File.TranslationBaseName}}.svg"

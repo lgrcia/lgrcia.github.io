@@ -13,13 +13,14 @@
             <svg data-src="{{.Site.BaseURL}}/images/{{.File.TranslationBaseName}}.svg" data-cache="disabled"
                 class="test"></svg>
             <span class="draft-text">draft</span>
+            <span class="type-text">{{.Params.type}}</span>
             <h3>
-                <a class="title" href="{{$url}}">{{ .Title }}
+                <a class="project-title" href="{{$url}}">{{ .Title }}
                     {{if .Params.first}}<span style="font-size: 1rem">*</span>{{ end }}</a>
             </h3>
-            <div class="short">
+            <!-- <div class="short">
                 {{.Params.short}}
-            </div>
+            </div> -->
         </a>
     </div>
     {{ end }}
