@@ -1,6 +1,6 @@
 ---
 title: "TRAPPIST-1h"
-date: 2022-02-06T00:00:00+00:00
+date: 2022-01-01T00:00:00+00:00
 draft: false
 short: "Atmospheric reconnaissance of a cool planet"
 type: paper

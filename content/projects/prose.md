@@ -1,6 +1,6 @@
 ---
 title: "prose"
-date: 2022-02-01T00:00:00+00:00
+date: 2022-03-01T00:00:00+00:00
 draft: false
 short: "Modular and transparent image processing pipelines"
 type: code & paper

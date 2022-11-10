@@ -6,14 +6,17 @@
 </div>
 
 <div class="projects-cards">
-    {{ range .Pages.ByPublishDate }}
+    {{ range .Pages.ByPublishDate.Reverse }}
     {{ $url := cond .Draft "." .RelPermalink }}
     <div class="project-card {{ if .Draft }}draft{{ end }}" style="width:260px; padding: 1rem">
         <a href="{{ $url }}" class="center">
             <svg data-src="{{.Site.BaseURL}}/images/{{.File.TranslationBaseName}}.svg" data-cache="disabled"
                 class="test"></svg>
+            {{if .Draft}}
             <span class="draft-text">draft</span>
+            {{else}}
             <span class="type-text">{{.Params.type}}</span>
+            {{end}}
             <h3>
                 <a class="project-title" href="{{$url}}">{{ .Title }}
                     {{if .Params.first}}<span style="font-size: 1rem">*</span>{{ end }}</a>
