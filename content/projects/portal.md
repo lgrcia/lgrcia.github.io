@@ -7,7 +7,7 @@ type: code
 paper: https://ui.adsabs.harvard.edu/abs/2020SPIE11445E..21S/abstract
 ---
 
-The [SPECULOOS survey](https://www.speculoos.uliege.be) generates approx. 70TB of raw images per night, thanks to its 8 robotic telescopes located around the globe. Once these data transferred, its [automatic reduction pipeline](https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.2446M/abstract) produces daily light curves that need to be inspected and analyzed by a large consortium. To ease this collaborative process, [Peter Pihlmann Pedersen](https://github.com/ppp-one) (University of Cambridge) and I developed a web-based interface, allowing our teams to visualize various data products, as well as reporting any signal of interest to the rest of the consortium (see features below).
+The [SPECULOOS survey](https://www.speculoos.uliege.be) generates approx. 70TB of raw images per night, thanks to its 8 robotic telescopes located around the globe. Once these data transferred, its [automatic reduction pipeline](https://ui.adsabs.harvard.edu/abs/2020MNRAS.495.2446M/abstract) produces daily light curves that need to be inspected and analyzed by a large consortium. To ease this collaborative process, [Peter Pihlmann Pedersen](https://github.com/ppp-one) (University of Cambridge, back-end) and I (front-end) developed a web-based interface, allowing our teams to visualize various data products, as well as reporting any signal of interest to the rest of the consortium (see features below).
 
 
 {{< rawhtml >}}
