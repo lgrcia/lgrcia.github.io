@@ -8,9 +8,11 @@
 <div id="banner" class="top-margin" style="display: flex; overflow: hidden; flex-direction: column; height:100%;">
   <div id="sentence" style="flex-grow: 2; margin-right:1rem; text-align: center;">
     <h1>I look at planets around</br>small and cool stars</h1>
-    <div class="short index-h2" style="color: gray; font-family: var(--font-primary) !important;">in the search for life</div>
+    <div class="short index-h2" style="color: gray; font-family: var(--font-primary) !important;">in the search for life
+    </div>
   </div>
-  <div id="video" style="z-index: -1; position: relative;flex-grow: 1;flex-shrink: 3; filter:grayscale(100%) constrast(120%);">
+  <div id="video"
+    style="z-index: -1; position: relative;flex-grow: 1;flex-shrink: 3; filter:grayscale(100%) constrast(120%);">
     <!-- <img src="{{.Site.BaseURL}}/images/portrait.jpg" width="250px"> -->
     <div id="star" style="opacity:0; overflow:hidden;position: relative;width: 100%">
       <div id="planet" style="display:none;position: relative; right: -1000px">
@@ -19,8 +21,7 @@
         </div>
       </div>
       <video src="{{.Site.BaseURL}}/images/sun.mp4" autoplay muted loop playsinline
-        oncanplay="planet.style.display = 'block'; star.style.opacity = 1" style="width:100%" alt=""
-        onclick=""></video>
+        oncanplay="planet.style.display = 'block'; star.style.opacity = 1" style="width:100%" alt="" onclick=""></video>
       <script>
         let DH = 280
         let banner = document.getElementById("banner");
@@ -37,8 +38,8 @@
           var y = e.pageY;
           var dx = x - (innerWidth / 2)
           planet.style.left = 1.2 * dx * (banner.clientWidth) / innerWidth + banner.clientWidth / 2 + "px";
-          planet.style.top = 0.3*banner.clientWidth + "px"
-          p = 0.035*banner.clientWidth
+          planet.style.top = 0.3 * banner.clientWidth + "px"
+          p = 0.035 * banner.clientWidth
           planet.style.height = p + "px"
           planet.style.width = p + "px"
           planet.style.marginTop = - p + "px"
@@ -58,4 +59,5 @@
   this is <a href="https://sdo.gsfc.nasa.gov/" style="text-decoration: underline;" target="_blank">the sun</a>...</div>
 
 {{ partial "footer.html" . }}
+{{ template "_internal/google_analytics.html" . }}
 {{ end }}
