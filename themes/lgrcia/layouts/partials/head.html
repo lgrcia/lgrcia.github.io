@@ -6,4 +6,13 @@
     <title>{{$title}}</title>
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <link rel="icon" href="{{.Site.BaseURL}}/images/lgrcia.svg" type="image/svg+xml">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK4SXLHY0E"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JK4SXLHY0E');
+    </script>
 </head>
