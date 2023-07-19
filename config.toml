@@ -32,3 +32,8 @@ name = "cv"
 weight = 5
 [menu.main.params]
 alt = "PDF"
+
+[sitemap]
+changefreq = 'monthly'
+filename = 'sitemap.xml'
+priority = 0.5
