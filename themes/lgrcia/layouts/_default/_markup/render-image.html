@@ -1,8 +1,0 @@
-{{ $imgWidth := (urls.Parse .Destination).Fragment }}
-<div style="width:100%,;text-align:center">
-    <img 
-        src="{{ .Destination }}" 
-        alt="{{ .Text }}" 
-        {{ with $imgWidth }}width="{{ . }}"{{ end }}
-        loading="lazy"/>
-</div>
