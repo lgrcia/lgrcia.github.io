@@ -10,7 +10,7 @@
     <link href="https://fonts.cdnfonts.com/css/menlo" rel="stylesheet">
     <style>
         :root {
-            --link-color: rgb(255, 255, 255);
+            --link-color: rgb(36, 144, 210);
         }
 
         pre {
@@ -19,11 +19,11 @@
 
         body {
             margin: 20px;
+            font-family: monospace;
             line-height: 1.6;
             font-size: 13px;
-            background-color: #c3c3c3;
+            background-color: #ffffff;
             max-width: 100%;
-            font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
         }
 
         a {
@@ -35,10 +35,19 @@
         }
 
         .center {
-            /*margin: auto;*/
+            margin: auto;
             border: 0px solid black;
             padding: 40px 20px 0px 20px;
             max-width: 700px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
     </style>
 </head>
@@ -85,59 +94,61 @@
         </ul>
         </p>
         <p><u>Software</u></p>
-        <ul>
-            <li>
-                <i>jaxoplanet</i>: analytical models of stellar light curves powered by JAX (<a
-                    href="https://github.com/exoplanet-dev/jaxoplanet">code</a>)
-            </li>
-            <li>
-                <i>nuance</i>: efficient detection of planets transiting active stars (<a
+        <div>
+            <img src="sh.svg" />
+            <ul>
+                <b>jaxoplanet</b>: analytical models of stellar light curves powered by JAX (<a
+                    href="https://github.com/exoplanet-dev/jaxoplanet">code</a>)<br>
+                <b>nuance</b>: efficient detection of planets transiting active stars (<a
                     href="https://github.com/lgrcia/nuance">code</a>,
-                <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240206835G/abstract">paper</a>)
-            </li>
-            <li>
-                <i>prose</i>: modular image processing pipelines for Astronomy (<a
+                <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240206835G/abstract">paper</a>)<br>
+                <b>prose</b>: modular image processing pipelines for Astronomy (<a
                     href="https://github.com/lgrcia/prose">code</a>,
-                <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.4817G/abstract">paper</a>)
-            </li>
-            <li>
-                <i>twirl</i>: local astrometric plate solving in Python (<a
-                    href="https://github.com/lgrcia/twirl">code</a>)
-            </li>
-        </ul>
-        </p>
-        <p><u>Curriculum</u></p>
-        <ul>
-            <li>2023-now - Research fellow at
-                <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">CCA</a> (New
-                York, USA)
-            </li>
+                <a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.4817G/abstract">paper</a>)<br>
+                <b>twirl</b>: local astrometric plate solving in Python (<a
+                    href="https://github.com/lgrcia/twirl">code</a>)<br>
+                <b>spotter</b>: approximate fluxes and spectra of non-uniform stars (<a
+                    href="https://github.com/lgrcia/spotter">code</a>)
+            </ul>
 
-            <li>2023-2019 - PhD in the <a href="https://www.trappist.uliege.be/cms/c_5006023/en/trappist">TRAPPIST</a>
+            <p><u>Curriculum</u></p>
+            <ul>
+                <b>2023 - now</b><br>
+                Research fellow at
+                <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">CCA</a>
+                (New
+                York, USA)<br>
+
+                <b>2023 - 2019</b><br> PhD in the <a
+                    href="https://www.trappist.uliege.be/cms/c_5006023/en/trappist">TRAPPIST</a>
                 team
                 + Teaching Assistant, University
                 of
-                Liège (Belgium) </li>
-            <li>2018-2017 - Engineer at <a href="https://www.esa.int/">ESA</a> (Noordwijk, Netherlands)</li>
-            <li>2017-2012 - MSc in Optical Engineering + MSc in Computer Science, Master thesis at CERN (Geneva,
-                Switzerland).</li>
-        </ul>
-        </p>
-        <p><u>Contact me if you know!</u></p>
-        <ul>
-            <li>Is there a linear/non-iterative <a
-                    href="https://en.wikipedia.org/wiki/Connected-component_labeling">connected component labeling
-                    algorithm</a>? (for GPUs!)</li>
-        </ul>
-        <br><br>
-        <div style="text-align:center">
-            <a href="https://github.com/lgrcia">github</a> . <a
-                href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy)&q=orcid%3A%220000-0002-4296-2246%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">papers(ADS)</a>
-            . <a href="https://orcid.org/0000-0002-4296-2246">orcid</a>
-            <br>
-            <i>Last updated 20th May 2024</i>
+                Liège (Belgium)<br>
+
+                <b>2018 - 2017</b><br>Engineer at <a href="https://www.esa.int/">ESA</a> (Noordwijk, Netherlands)<br>
+
+                <b>2017 - 2012</b><br>MSc in Optical Engineering + MSc in Computer Science, Master thesis at CERN
+                (Geneva,
+                Switzerland)
+            </ul>
+            </ul>
+            </p>
+            <p><u>Contact me if you know!</u></p>
+            <ul>
+                <li>Is there a linear/non-iterative <a
+                        href="https://en.wikipedia.org/wiki/Connected-component_labeling">connected component labeling
+                        algorithm</a>? (for GPUs!)</li>
+            </ul>
+            <br><br>
+            <div style="text-align:center">
+                <a href="https://github.com/lgrcia">github</a> . <a
+                    href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy)&q=orcid%3A%220000-0002-4296-2246%22&sort=date%20desc%2C%20bibcode%20desc&p_=0">papers(ADS)</a>
+                . <a href="https://orcid.org/0000-0002-4296-2246">orcid</a>
+                <br>
+                <i>Last updated 20th May 2024</i>
+            </div>
         </div>
-    </div>
 
 </body>
 
