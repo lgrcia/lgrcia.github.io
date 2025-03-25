@@ -33,6 +33,10 @@
             color: var(--link-color);
         }
 
+        a:hover {
+            color: "black";
+        }
+
         .center {
             margin: auto;
             border: 0px solid black;
@@ -47,6 +51,16 @@
             max-width: 100%;
             margin-top: 30px;
             margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .center {
+                padding: 0px;
+            }
+
+            body {
+                margin: 0px 10px;
+            }
         }
     </style>
 </head>
