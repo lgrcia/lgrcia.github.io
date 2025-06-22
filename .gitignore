@@ -4,3 +4,4 @@ contact.json
 data
 __pycache__
 *.pyc
+build
