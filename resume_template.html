@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ name }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Author: {{ name }}, personal website">
+    <meta name="keywords" content="Lionel Garcia, Astronomy, Astro, Exoplanets, Code, Academia, Research, Science">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        a {
+            color: rgb(53, 116, 234);
+            text-decoration: none;
+        }
+
+        .desc {
+            color: var(--link-color);
+            font-size: 1.2em;
+        }
+
+        .location {
+            color: var(--link-color);
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h1 style="margin-bottom: -5px;">{{ name }}</h1>
+        <div class="desc">{{ summary }}</div>
+        <ul> {% for stat in stats %} <li>{{ stat }}</li> {% endfor %} </ul>
+        <h2>Experience</h2>
+        <ul style="list-style-type:none;"> {% for job in experience %} <li><b>{{ job.title }}</b><span
+                    class="location">{{ job.location }}</span></li>
+            <ul> {% for desc in job.description %} <li>{{ desc|safe }}</li> {% endfor %} </ul>
+            <br> {% endfor %}
+        </ul>
+        <h2>Education</h2>
+        <ul style="list-style-type:none;"> {% for edu in education %} <li><b>{{ edu.degree }}</b><span
+                    class="location">{{ edu.location }}</span></li> {% endfor %} </ul>
+    </div>
+</body>
+
+</html>
