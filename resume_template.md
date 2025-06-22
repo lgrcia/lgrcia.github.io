@@ -20,5 +20,5 @@
 ## Education
 
 {% for edu in education %}
-- **{{ edu.degree }}*, *{{ edu.location }}*
+- **{{ edu.degree }}**, *{{ edu.location }}*
 {% endfor %}

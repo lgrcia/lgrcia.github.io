@@ -33,7 +33,7 @@ Astrophysicist and Data Scientist. Bridging academia and industry.
 
 ## Education
 
-- **PhD in Astronomy – University of Liège*, *Belgium (2023)*
-- **Engineering Degree in Optical Systems – Institut d'Optique*, *Paris, France (2017)*
-- **Master in Computer Science – University of Bordeaux*, *France (2017)*
-- **License in Physics – University Paris-Saclay*, *France (2014)*
+- **PhD in Astronomy – University of Liège**, *Belgium (2023)*
+- **Engineering Degree in Optical Systems – Institut d'Optique**, *Paris, France (2017)*
+- **Master in Computer Science – University of Bordeaux**, *France (2017)*
+- **License in Physics – University Paris-Saclay**, *France (2014)*
