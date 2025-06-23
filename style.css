@@ -68,3 +68,13 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.contacts {
+    color: var(--link-color);
+    opacity: 0.7;
+}
+
+.contacts a {
+    color: var(--link-color);
+    text-decoration: underline;
+}

@@ -28,20 +28,26 @@
 
 <body>
     <div class="center">
-        <h1 style="margin-bottom: 0px;" class="flash">{{ name }}</h1>
-        <div class="desc">{{ summary }}</div>
-        <ul style="list-style-type:none; padding:0px;">
-            <li style="margin-bottom: 5px;">📄 {{ stats }}</li>
-            <li>⚙️ <span style="color:var(--link-color)">{{ stack }}</span></li>
-        </ul>
+        <h1 style="margin-bottom: -3px;" class="flash">{{ name }}</h1>
+        <div class="desc" style="margin-bottom: 4px;">{{ summary }} </div>
+        <div class="contacts"><a href="https://github.com/lgrcia">GitHub</a> | <a
+                href="https://linkedin.com/in/lionel-garcia-626638110">Linkedin</a> | <a
+                href="https://scholar.google.com/citations?user=mBaWSQoAAAAJ&hl=en">Google Scholars</a>
+        </div>
+        <div style="margin: 30px 0px;">
+            <ul style="list-style-type:none; padding:0px;">
+                <li style="margin-bottom: 5px;">📄 {{ stats }}</li>
+                <li>⚙️ <span>{{ stack }}</span></li>
+            </ul>
+        </div>
         <h2>Experience</h2>
-        <ul style="list-style-type:none;"> {% for job in experience %} <li><b>{{ job.title }}</b><span
+        <ul style="list-style-type:none;padding-left:1em;"> {% for job in experience %} <li><b>{{ job.title }}</b><span
                     class="location">{{ job.location }}</span></li>
-            <ul> {% for desc in job.description %} <li>{{ desc|safe }}</li> {% endfor %} </ul>
+            <ul style=""> {% for desc in job.description %} <li>{{ desc|safe }}</li> {% endfor %} </ul>
             <br> {% endfor %}
         </ul>
         <h2>Education</h2>
-        <ul style="list-style-type:none;"> {% for edu in education %} <li><b>{{ edu.degree }}</b><span
+        <ul style="list-style-type:none"> {% for edu in education %} <li><b>{{ edu.degree }}</b><span
                     class="location">{{ edu.location }}</span></li> {% endfor %} </ul>
     </div>
 </body>
