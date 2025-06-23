@@ -75,6 +75,6 @@ h2 {
 }
 
 .contacts a {
-    color: var(--link-color);
-    text-decoration: underline;
+    color: var(--link-color) !important;
+    text-decoration: underline !important;
 }
