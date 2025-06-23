@@ -2,8 +2,8 @@
 
 {{ summary }}
 
-{% for stat in stats %}- {{ stat }}
-{% endfor %}
+📄 {{ stats }}
+⚙️ {{ technical_stack }}
 
 ## Experience
 

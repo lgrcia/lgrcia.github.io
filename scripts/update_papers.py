@@ -108,7 +108,7 @@ if __name__ == "__main__":
     current_date = datetime.now().strftime("%Y-%m-%d")
 
     resume["stats"] = (
-        f"**{total_papers}** refereed publications, **{total_citations}** total citations."
+        f"{total_papers} refereed publications, {total_citations} total citations."
     )
 
     print(f"total papers: {total_papers}")
