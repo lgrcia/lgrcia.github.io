@@ -2,8 +2,60 @@
 
 Astrophysicist and Data Scientist. Bridging academia and industry.
 
-- As of 2025-06-22: **38** refereed publications, **789** total citations.
-- *Technical stack: Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.*
+- *
+- *
+- 3
+- 8
+- *
+- *
+-  
+- r
+- e
+- f
+- e
+- r
+- e
+- e
+- d
+-  
+- p
+- u
+- b
+- l
+- i
+- c
+- a
+- t
+- i
+- o
+- n
+- s
+- ,
+-  
+- *
+- *
+- 7
+- 8
+- 9
+- *
+- *
+-  
+- t
+- o
+- t
+- a
+- l
+-  
+- c
+- i
+- t
+- a
+- t
+- i
+- o
+- n
+- s
+- .
 
 ## Experience
 

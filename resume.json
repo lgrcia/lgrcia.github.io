@@ -1,10 +1,8 @@
 {
   "name": "Lionel Garcia",
   "summary": "Astrophysicist and Data Scientist. Bridging academia and industry.",
-  "stats": [
-    "",
-    "*Technical stack: Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.*"
-  ],
+  "stats": "",
+  "technical_stack": "Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.",
   "experience": [
     {
       "title": "Center for Computational Astrophysics – Research Fellow",

@@ -28,9 +28,12 @@
 
 <body>
     <div class="center">
-        <h1 style="margin-bottom: -5px;">{{ name }}</h1>
+        <h1 style="margin-bottom: 0px;" class="flash">{{ name }}</h1>
         <div class="desc">{{ summary }}</div>
-        <ul> {% for stat in stats %} <li>{{ stat }}</li> {% endfor %} </ul>
+        <ul style="list-style-type:none; padding:0px;">
+            <li style="margin-bottom: 5px;">📄 {{ stats }}</li>
+            <li>⚙️ <span style="color:var(--link-color)">{{ stack }}</span></li>
+        </ul>
         <h2>Experience</h2>
         <ul style="list-style-type:none;"> {% for job in experience %} <li><b>{{ job.title }}</b><span
                     class="location">{{ job.location }}</span></li>

@@ -42,8 +42,8 @@ with open(json_path, "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # Convert markdown links to HTML in all relevant fields
-data["stats"] = convert_links_in_list(data.get("stats", []))
-data["technical_stack"] = md_to_html(data.get("technical_stack", ""))
+data["stats"] = md_to_html(data.get("stats", ""))
+data["stack"] = md_to_html(data.get("technical_stack", ""))
 data["experience"] = convert_links_in_experience(data.get("experience", []))
 
 # Set up Jinja2 environment (load from project root)

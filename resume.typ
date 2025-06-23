@@ -1,11 +1,13 @@
 #import "@preview/cmarker:0.1.6"
 
-#set text(font: "Arial")
-#show heading.where(level: 1): set text(size: 22pt)
+#set text(font: "Helvetica Neue")
+#show heading.where(level: 1): set text(size: 22pt, weight: 800)
 #set text(size: 10.5pt)
-#show link: set text(rgb(53, 116, 234))
-#let gray(str) = text(rgb(120, 120, 120), str)
-#set par(leading: 0.8em)
+#let blue = rgb(53, 116, 234)
+#let green = rgb(67, 187, 117)
+#show link: set text(blue)
+#let gray(str) = text(rgb(130, 130, 130), str)
+#set par(leading: 0.9em)
 
 #let data = json("data/resume.json")
 #let contact = json("data/contact.json")
@@ -15,14 +17,16 @@
   cmarker.render(item)
 }
 
-= #data.name
+= #text(fill: gradient.linear(blue, green))[#data.name]
 #text(size: 13pt, gray(data.summary))
 #v(-6pt)
 #link("mailto:" + contact.mail) | #link(contact.github)[github.com/lgrcia] | #link(contact.linkedin)[linkedin]
 
-#block(inset: 10pt, for stat in data.stats {
-  list.item(render_item(stat))
-})
+#v(7pt)
+📄 #render_item(data.stats)
+#v(-5pt)
+⚙️ #gray(render_item(data.technical_stack))
+#v(7pt)
 
 == Experience
 

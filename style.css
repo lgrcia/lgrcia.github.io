@@ -14,7 +14,6 @@ body {
     font-size: 16px;
     background-color: #ffffff;
     max-width: 100%;
-    padding-right: 100px;
 }
 
 a {
@@ -56,8 +55,16 @@ img {
 
 h1 {
     font-size: 2.25 rem;
+    display: inline-block;
 }
 
 h2 {
     font-size: 1.25rem;
+}
+
+.flash {
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgb(32, 133, 204) 0%, rgb(67, 187, 117) 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
