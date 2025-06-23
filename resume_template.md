@@ -3,6 +3,7 @@
 {{ summary }}
 
 📄 {{ stats }}
+
 ⚙️ {{ technical_stack }}
 
 ## Experience
