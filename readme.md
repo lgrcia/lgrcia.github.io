@@ -18,7 +18,7 @@ Astrophysicist and Data Scientist. From academia to industry.
 
 **University of Liège – Graduate Research Assistant**, *Belgium (2019–2023)*
 
-  - Maintained and remotely operated large robotic telescopes for the [SPECULOOS](https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452) project. Developed a fully automated pipeline for daily reduction of ~100GB of raw images. Built and maintained web dashboards for data analysis monitoring and visualization (serving ~35 users).
+  - Maintained and remotely operated large robotic telescopes for the [SPECULOOS](https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452) project. Developed a fully automated image processing pipeline running daily to transform raw data into scientific products. Built and maintained web dashboards for data analysis monitoring and visualization (serving ~35 users).
   - Developed, released, and maintained [prose](https://github.com/lgrcia/prose) (astronomical image processing pipelines), [twirl](https://github.com/lgrcia/twirl) (pattern matching for stellar asterisms), and [ballet](https://huggingface.co/lgrcia/ballet) (CNN for stellar PSF fitting).
 
 

@@ -19,7 +19,7 @@
       "title": "Université de Liège – Doctorant",
       "location": "Belgique (2019–2023)",
       "description": [
-        "Opération et maintenance d'un réseau de télescopes robotiques pour le projet [SPECULOOS](https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452). Développement d’un pipeline automatisé de traitement d'images. Création et maintenance de tableaux de bord web pour le suivi et la visualisation de l'analyse de données (~35 utilisateurs).",
+        "Opération et maintenance d'un réseau de télescopes robotiques pour le projet [SPECULOOS](https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452). Développement d’un pipeline automatisé de traitement d'images. Création et maintenance de dashboards web pour la visualisation de l'analyse de données (40 utilisateurs).",
         "Développement, publication et maintenance de [prose](https://github.com/lgrcia/prose) (pipelines de traitement d’images astronomiques), [twirl](https://github.com/lgrcia/twirl) (reconnaissance de motifs d’astérismes stellaires), et [ballet](https://huggingface.co/lgrcia/ballet) (réseau de neurones convolutifs pour la modélisation de profils stellaires)."
       ]
     },
