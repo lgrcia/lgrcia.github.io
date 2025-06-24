@@ -4,6 +4,6 @@ contact.json
 data
 __pycache__
 *.pyc
-build
 uv.lock
 .vscode
+*.pdf
