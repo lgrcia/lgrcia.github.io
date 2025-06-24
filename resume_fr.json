@@ -11,7 +11,7 @@
       "location": "New York, États-Unis (2023–2025)",
       "description": [
         "Responsable d’un [programme scientifique](https://www.stsci.edu/jwst-program-info/program/?program=5799) d’envergure avec le télescope spatial James Webb, gestion d’une équipe de 15 scientifiques.",
-        "Développement, publication et maintenance de [jaxoplanet](https://github.com/exoplanet-dev/jaxoplanet) (suite de modèles pour l’analyse de grandes séries temporelles astronomiques), [nuance](https://github.com/lgrcia/nuance) (algorithme de processus gaussien pour détecter des signaux périodiques dans des séries temporelles dominées par du bruit rouge), et [spotter](https://github.com/lgrcia/spotter) (cadre pour modéliser stochastiquement les surfaces stellaires actives). Ces outils utilisent JAX et sont optimisés pour les GPUs & TPUs.",
+        "Développement, publication et maintenance de [jaxoplanet](https://github.com/exoplanet-dev/jaxoplanet) (suite de modèles pour l’analyse de grandes séries temporelles astronomiques), [nuance](https://github.com/lgrcia/nuance) (algorithme basé sur des processus gaussiens pour détecter des signaux périodiques dans des séries temporelles dominé par du bruit rouge), et [spotter](https://github.com/lgrcia/spotter) (modéle stochastique de surfaces sphériques). Ces outils utilisent JAX et sont accelérés sur GPUs.",
         "Diffusion des travaux de recherches au sein de packages Python open-source avec documentation complète, CI/CD et tests unitaires."
       ]
     },
@@ -19,8 +19,8 @@
       "title": "Université de Liège – Doctorant",
       "location": "Belgique (2019–2023)",
       "description": [
-        "Opération et maintenance de grands télescopes robotiques pour le projet [SPECULOOS](https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452). Développement d’un pipeline automatisé pour la réduction quotidienne d’environ 100 Go d’images brutes. Création et maintenance de tableaux de bord web pour le suivi et la visualisation des analyses de données (environ 35 utilisateurs).",
-        "Développement, publication et maintenance de [prose](https://github.com/lgrcia/prose) (pipelines de traitement d’images astronomiques), [twirl](https://github.com/lgrcia/twirl) (reconnaissance de motifs d’astérismes stellaires), et [ballet](https://huggingface.co/lgrcia/ballet) (réseau de neurones convolutifs pour l’ajustement de PSF stellaire)."
+        "Opération et maintenance d'un réseau de télescopes robotiques pour le projet [SPECULOOS](https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452). Développement d’un pipeline automatisé de traitement d'images. Création et maintenance de tableaux de bord web pour le suivi et la visualisation des l'analyse de données (~35 utilisateurs).",
+        "Développement, publication et maintenance de [prose](https://github.com/lgrcia/prose) (pipelines de traitement d’images astronomiques), [twirl](https://github.com/lgrcia/twirl) (reconnaissance de motifs d’astérismes stellaires), et [ballet](https://huggingface.co/lgrcia/ballet) (réseau de neurones convolutifs pour la modélisation de PSF stellaire)."
       ]
     },
     {
