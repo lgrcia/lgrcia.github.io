@@ -2,6 +2,10 @@
 
 #set text(font: "Helvetica Neue")
 #show heading.where(level: 1): set text(size: 22pt, weight: 800)
+#set page(margin: (
+  top: 2cm,
+  bottom: 1cm,
+))
 #set text(size: 10.5pt)
 #let blue = rgb(53, 116, 234)
 #let green = rgb(67, 187, 117)
@@ -21,7 +25,11 @@
 = #text(fill: gradient.linear(blue, green))[#data.name]
 #text(size: 13pt, gray(data.summary))
 #v(-6pt)
-#link("mailto:" + contact.mail) | #link(contact.github)[github.com/lgrcia] | #link(contact.linkedin)[linkedin]
+#block[
+  #show link: set text(fill: rgb(130, 130, 130))
+  #show link: underline
+  #link("mailto:" + contact.mail) · #link(contact.github)[GitHub] · #link(contact.linkedin)[LinkedIn]
+]
 
 #v(7pt)
 📄 #stats.total #data.total_pubs_str, #stats.citations #data.total_citations_str.
