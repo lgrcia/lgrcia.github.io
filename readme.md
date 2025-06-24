@@ -1,8 +1,8 @@
 # Lionel Garcia
 
-Astrophysicist and Data Scientist. Bridging academia and industry.
+Astrophysicist and Data Scientist. From academia to industry.
 
-📄 38 refereed publications, 789 total citations.
+📄 42 refereed publications, 798 citations.
 
 ⚙️ Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.
 

@@ -28,7 +28,11 @@
 
 <body>
     <div class="center">
-        <h1 style="margin-bottom: -3px;" class="flash">{{ name }}</h1>
+        <div style="display: flex; align-items: baseline; justify-content: space-between;">
+            <h1 style="margin-bottom: 0;" class="flash">{{ name }}</h1>
+            <span class="contacts"><a href="./resume_en.html">en</a>/<a href="./resume_fr.html">fr</a>
+            </span>
+        </div>
         <div class="desc" style="margin-bottom: 4px;">{{ summary }} </div>
         <div class="contacts"><a href="https://github.com/lgrcia">GitHub</a> · <a
                 href="https://linkedin.com/in/lionel-garcia-626638110">Linkedin</a> · <a
@@ -36,7 +40,8 @@
         </div>
         <div style="margin: 30px 0px;">
             <ul style="list-style-type:none; padding:0px;">
-                <li style="margin-bottom: 5px;">📄 {{ stats }}</li>
+                <li style="margin-bottom: 5px;">📄 {{ stats.total }} {{ total_pubs_str }}, {{ stats.citations }} {{
+                    total_citations_str }}.</li>
                 <li>⚙️ <span>{{ stack }}</span></li>
             </ul>
         </div>

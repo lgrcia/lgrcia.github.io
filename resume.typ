@@ -9,7 +9,8 @@
 #let gray(str) = text(rgb(130, 130, 130), str)
 #set par(leading: 0.9em)
 
-#let data = json("data/resume.json")
+#let data = json("resume_" + sys.inputs.lang + ".json")
+#let stats = json("data/pubs.json").stats
 #let contact = json("data/contact.json")
 
 #let render_item(item) = {
@@ -23,7 +24,7 @@
 #link("mailto:" + contact.mail) | #link(contact.github)[github.com/lgrcia] | #link(contact.linkedin)[linkedin]
 
 #v(7pt)
-📄 #render_item(data.stats)
+📄 #stats.total #data.total_pubs_str, #stats.citations #data.total_citations_str.
 #v(-5pt)
 ⚙️ #gray(render_item(data.technical_stack))
 #v(7pt)

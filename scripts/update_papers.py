@@ -5,20 +5,10 @@ import json
 import importlib.util
 from operator import itemgetter
 from pathlib import Path
+import argparse
+import utf8totex
 
 import ads
-
-ads_key = json.load(open(Path(__file__).parent.parent / "data" / "contact.json"))[
-    "ads_key"
-]
-ads.config.token = ads_key
-
-here = Path(__file__).resolve().parent
-json_path = here.parent / "data" / "pubs.json"
-
-spec = importlib.util.spec_from_file_location("utf8totex", str(here / "utf8totex.py"))
-utf8totex = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(utf8totex)
 
 
 def get_papers(orcid):
@@ -88,31 +78,51 @@ def get_papers(orcid):
     return sorted(dicts, key=itemgetter("pubdate"), reverse=True)
 
 
-if __name__ == "__main__":
-    papers = get_papers("0000-0002-4296-2246")
-    papers = [
-        p for p in papers if p["doctype"] not in ["dataset", "proposal", "abstract"]
-    ]
+def main():
+    parser = argparse.ArgumentParser(
+        description="Update papers and resume stats from ADS."
+    )
+    parser.add_argument(
+        "-o",
+        "--output",
+        default="data/pubs.json",
+        help="Output JSON file for papers",
+    )
+    parser.add_argument(
+        "--orcid", default="0000-0002-4296-2246", help="ORCID identifier"
+    )
+    args = parser.parse_args()
+
+    here = Path(__file__).resolve().parent
+    root = here.parent
+
+    ads_key = json.load(open(root / "data" / "contact.json"))["ads_key"]
+    ads.config.token = ads_key
+
+    json_path = root / args.output
+
+    spec = importlib.util.spec_from_file_location(
+        "utf8totex", str(here / "utf8totex.py")
+    )
+    utf8totex = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(utf8totex)
+
+    _papers = get_papers(args.orcid)
+    papers = {
+        "publications": [
+            p
+            for p in _papers
+            if p["doctype"] not in ["dataset", "proposal", "abstract"]
+        ]
+    }
+    papers["stats"] = {
+        "total": len(papers["publications"]),
+        "citations": sum([p["citations"] for p in papers["publications"]]),
+    }
+
     with open(json_path, "w") as f:
         json.dump(papers, f, sort_keys=True, indent=2, separators=(",", ": "))
 
-    resume_json = here.parent / "resume.json"
-    with open(resume_json, "r") as f:
-        resume = json.load(f)
 
-    total_papers = len(papers)
-    total_citations = sum([p["citations"] for p in papers])
-
-    from datetime import datetime
-
-    current_date = datetime.now().strftime("%Y-%m-%d")
-
-    resume["stats"] = (
-        f"{total_papers} refereed publications, {total_citations} total citations."
-    )
-
-    print(f"total papers: {total_papers}")
-    print(f"total citations: {total_citations}")
-
-    with open(resume_json.parent / "data" / "resume.json", "w") as f:
-        json.dump(resume, f, indent=2, ensure_ascii=False)
+if __name__ == "__main__":
+    main()

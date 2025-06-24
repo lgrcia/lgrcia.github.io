@@ -1,7 +1,9 @@
 {
+  "language": "en",
   "name": "Lionel Garcia",
-  "summary": "Astrophysicist and Data Scientist. Bridging academia and industry.",
-  "stats": "",
+  "total_pubs_str": "refereed publications",
+  "total_citations_str": "citations",
+  "summary": "Astrophysicist and Data Scientist. From academia to industry.",
   "technical_stack": "Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.",
   "experience": [
     {

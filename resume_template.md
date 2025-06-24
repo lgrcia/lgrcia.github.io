@@ -2,7 +2,7 @@
 
 {{ summary }}
 
-📄 {{ stats }}
+📄 {{ stats.total }} refereed publications, {{stats.citations}} citations.
 
 ⚙️ {{ technical_stack }}
 

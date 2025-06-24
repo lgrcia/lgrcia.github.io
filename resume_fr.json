@@ -1,0 +1,59 @@
+{
+  "language": "fr",
+  "name": "Lionel Garcia",
+  "total_pubs_str": "publications",
+  "total_citations_str": "citations.",
+  "summary": "Astrophysicien et Data Scientist. Du monde académique vers l'industrie.",
+  "technical_stack": "Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.",
+  "experience": [
+    {
+      "title": "Center for Computational Astrophysics – Research Fellow",
+      "location": "New York, États-Unis (2023–2025)",
+      "description": [
+        "Responsable d’un [programme scientifique](https://www.stsci.edu/jwst-program-info/program/?program=5799) d’envergure avec le télescope spatial James Webb, gestion d’une équipe de 15 scientifiques.",
+        "Développement, publication et maintenance de [jaxoplanet](https://github.com/exoplanet-dev/jaxoplanet) (suite de modèles pour l’analyse de grandes séries temporelles astronomiques), [nuance](https://github.com/lgrcia/nuance) (algorithme de processus gaussien pour détecter des signaux périodiques dans des séries temporelles dominées par du bruit rouge), et [spotter](https://github.com/lgrcia/spotter) (cadre pour modéliser stochastiquement les surfaces stellaires actives). Ces outils utilisent JAX et sont optimisés pour les GPUs & TPUs.",
+        "Diffusion des travaux de recherches au sein de packages Python open-source avec documentation complète, CI/CD et tests unitaires."
+      ]
+    },
+    {
+      "title": "Université de Liège – Doctorant",
+      "location": "Belgique (2019–2023)",
+      "description": [
+        "Opération et maintenance de grands télescopes robotiques pour le projet [SPECULOOS](https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452). Développement d’un pipeline automatisé pour la réduction quotidienne d’environ 100 Go d’images brutes. Création et maintenance de tableaux de bord web pour le suivi et la visualisation des analyses de données (environ 35 utilisateurs).",
+        "Développement, publication et maintenance de [prose](https://github.com/lgrcia/prose) (pipelines de traitement d’images astronomiques), [twirl](https://github.com/lgrcia/twirl) (reconnaissance de motifs d’astérismes stellaires), et [ballet](https://huggingface.co/lgrcia/ballet) (réseau de neurones convolutifs pour l’ajustement de PSF stellaire)."
+      ]
+    },
+    {
+      "title": "CERN – Technical Student",
+      "location": "Noordwijk, Pays-Bas (2017–2018)",
+      "description": [
+        "Application du machine learning pour collecter des données et prédire les coûts des futures missions spatiales."
+      ]
+    },
+    {
+      "title": "CERN – Étudiant technique",
+      "location": "Genève, Suisse (2016–2017)",
+      "description": [
+        "Conception du [workflow d’analyse de données](https://github.com/lgrcia/BWS-diagnostic) pour l’étalonnage d’un instrument du Large Hadron Collider."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Doctorat en Astrophysique – Université de Liège",
+      "location": "Belgique (2023)"
+    },
+    {
+      "degree": "Diplôme d’Ingénieur en systèmes optiques – Institut d’Optique",
+      "location": "Paris, France (2017)"
+    },
+    {
+      "degree": "Master en Informatique – Université de Bordeaux",
+      "location": "France (2017)"
+    },
+    {
+      "degree": "Licence en Physique – Université Paris-Saclay",
+      "location": "France (2014)"
+    }
+  ]
+}
