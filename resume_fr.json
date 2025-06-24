@@ -2,7 +2,7 @@
   "language": "fr",
   "name": "Lionel Garcia",
   "total_pubs_str": "publications",
-  "total_citations_str": "citations.",
+  "total_citations_str": "citations",
   "summary": "Astrophysicien et Data Scientist. Du monde académique vers l'industrie.",
   "technical_stack": "Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.",
   "experience": [
@@ -11,27 +11,27 @@
       "location": "New York, États-Unis (2023–2025)",
       "description": [
         "Responsable d’un [programme scientifique](https://www.stsci.edu/jwst-program-info/program/?program=5799) d’envergure avec le télescope spatial James Webb, gestion d’une équipe de 15 scientifiques.",
-        "Développement, publication et maintenance de [jaxoplanet](https://github.com/exoplanet-dev/jaxoplanet) (suite de modèles pour l’analyse de grandes séries temporelles astronomiques), [nuance](https://github.com/lgrcia/nuance) (algorithme basé sur des processus gaussiens pour détecter des signaux périodiques dans des séries temporelles dominé par du bruit rouge), et [spotter](https://github.com/lgrcia/spotter) (modéle stochastique de surfaces sphériques). Ces outils utilisent JAX et sont accelérés sur GPUs.",
-        "Diffusion des travaux de recherches au sein de packages Python open-source avec documentation complète, CI/CD et tests unitaires."
+        "Développement, publication et maintenance de [jaxoplanet](https://github.com/exoplanet-dev/jaxoplanet) (suite de modèles pour l’analyse de séries temporelles astronomiques), [nuance](https://github.com/lgrcia/nuance) (algorithme basé sur des processus Gaussiens pour la detection de signaux périodiques dans des séries temporelles dominées par du bruit rouge), et [spotter](https://github.com/lgrcia/spotter) (modèle stochastique de surfaces stellaires actives). Ces outils utilisent JAX et sont accélérés sur GPU.",
+        "Diffusion des travaux de recherche sous forme de packages Python open-source avec documentation complète, CI/CD et tests unitaires."
       ]
     },
     {
       "title": "Université de Liège – Doctorant",
       "location": "Belgique (2019–2023)",
       "description": [
-        "Opération et maintenance d'un réseau de télescopes robotiques pour le projet [SPECULOOS](https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452). Développement d’un pipeline automatisé de traitement d'images. Création et maintenance de tableaux de bord web pour le suivi et la visualisation des l'analyse de données (~35 utilisateurs).",
-        "Développement, publication et maintenance de [prose](https://github.com/lgrcia/prose) (pipelines de traitement d’images astronomiques), [twirl](https://github.com/lgrcia/twirl) (reconnaissance de motifs d’astérismes stellaires), et [ballet](https://huggingface.co/lgrcia/ballet) (réseau de neurones convolutifs pour la modélisation de PSF stellaire)."
+        "Opération et maintenance d'un réseau de télescopes robotiques pour le projet [SPECULOOS](https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452). Développement d’un pipeline automatisé de traitement d'images. Création et maintenance de tableaux de bord web pour le suivi et la visualisation de l'analyse de données (~35 utilisateurs).",
+        "Développement, publication et maintenance de [prose](https://github.com/lgrcia/prose) (pipelines de traitement d’images astronomiques), [twirl](https://github.com/lgrcia/twirl) (reconnaissance de motifs d’astérismes stellaires), et [ballet](https://huggingface.co/lgrcia/ballet) (réseau de neurones convolutifs pour la modélisation de profils stellaires)."
       ]
     },
     {
-      "title": "CERN – Technical Student",
+      "title": "Agence Spatiale Européenne – Ingénieur",
       "location": "Noordwijk, Pays-Bas (2017–2018)",
       "description": [
         "Application du machine learning pour collecter des données et prédire les coûts des futures missions spatiales."
       ]
     },
     {
-      "title": "CERN – Étudiant technique",
+      "title": "CERN - Technical Student",
       "location": "Genève, Suisse (2016–2017)",
       "description": [
         "Conception du [workflow d’analyse de données](https://github.com/lgrcia/BWS-diagnostic) pour l’étalonnage d’un instrument du Large Hadron Collider."

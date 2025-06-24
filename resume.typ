@@ -6,6 +6,7 @@
   top: 2cm,
   bottom: 1cm,
 ))
+#set align(horizon)
 #set text(size: 10.5pt)
 #let blue = rgb(53, 116, 234)
 #let green = rgb(67, 187, 117)

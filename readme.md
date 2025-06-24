@@ -2,7 +2,7 @@
 
 Astrophysicist and Data Scientist. From academia to industry.
 
-📄 42 refereed publications, 798 citations.
+📄 34 refereed publications, 777 citations.
 
 ⚙️ Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.
 

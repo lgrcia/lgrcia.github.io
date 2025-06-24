@@ -113,6 +113,7 @@ def main():
             p
             for p in _papers
             if p["doctype"] not in ["dataset", "proposal", "abstract"]
+            and p["arxiv"] is not None
         ]
     }
     papers["stats"] = {
