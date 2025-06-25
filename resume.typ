@@ -3,8 +3,10 @@
 #set text(font: "Helvetica Neue")
 #show heading.where(level: 1): set text(size: 22pt, weight: 800)
 #set page(margin: (
-  top: 2cm,
+  top: 1.5cm,
   bottom: 1cm,
+  left: 1.5cm,
+  right: 1.5cm,
 ))
 #set align(horizon)
 #set text(size: 10.5pt)
@@ -12,6 +14,9 @@
 #let green = rgb(67, 187, 117)
 #show link: set text(blue)
 #let gray(str) = text(rgb(130, 130, 130), str)
+#let text_primary(str) = text(rgb("#0f172a"), str)
+#let text_secondary(str) = text(rgb("#475569"), str)
+#let text_muted(str) = text(rgb("#6b7280"), str)
 #set par(leading: 0.9em)
 
 #let data = json("resume_" + sys.inputs.lang + ".json")
@@ -24,30 +29,34 @@
 }
 
 = #text(fill: gradient.linear(blue, green))[#data.name]
-#text(size: 13pt, gray(data.summary))
-#v(-6pt)
-#block[
-  #show link: set text(fill: rgb(130, 130, 130))
-  #show link: underline
-  #link("mailto:" + contact.mail) · #link(contact.github)[GitHub] · #link(contact.linkedin)[LinkedIn]
+#v(2pt)
+#text(size: 12pt, text_secondary(data.summary))
+#v(-4pt)
+#block()[
+  #show link: set text(fill: rgb("#6b7280"), weight: 400)
+  #link("mailto:" + contact.mail)#h(5pt)#link(contact.github)[GitHub]#h(5pt)#link(contact.linkedin)[LinkedIn]
 ]
-
-#v(7pt)
-📄 #stats.total #data.total_pubs_str, #stats.citations #data.total_citations_str.
-#v(-5pt)
-⚙️ #gray(render_item(data.technical_stack))
-#v(7pt)
+#block(fill: rgb("#f4f5f8"), inset: (left: 9pt, right: 9pt, top: 4pt, bottom: 4pt), radius: 4pt)[
+  #set text(size: 10pt, weight: 400)
+  #v(7pt)
+  📄 #h(3pt) #stats.total #data.total_pubs_str, #stats.citations #data.total_citations_str.
+  #v(-5pt)
+  ⚙️ #h(3pt) #gray(render_item(data.technical_stack))
+  #v(7pt)
+]
 
 == Experience
 
 #block(inset: 10pt, for job in data.experience {
-  strong(job.title) + "  " + gray(render_item(job.location))
-  for item in job.description { list.item(render_item(item)) }
-  v(4pt)
+  text(size: 10.5pt, strong(job.title)) + "  " + text_muted(text(size: 10pt, render_item(job.location)))
+  block(inset: (left: 5pt, top: 3pt, bottom: 3pt), for item in job.description {
+    text(size: 10pt, list.item(render_item(item)))
+    v(2pt)
+  })
 })
 
 == Education
 
 #block(inset: 10pt, for edu in data.education {
-  strong(edu.degree) + ", " + gray(edu.location) + "\n"
+  strong(edu.degree) + ", " + text_muted(text(size: 10pt, edu.location)) + "\n"
 })
