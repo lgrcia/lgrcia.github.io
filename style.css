@@ -73,3 +73,74 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.desc {
+    color: var(--link-color);
+    font-size: 1.2em;
+}
+
+.location {
+    color: var(--link-color);
+    margin-left: 10px;
+}
+
+.contacts {
+    color: var(--link-color);
+    display: flex;
+    gap: 15px;
+}
+
+.contacts a {
+    color: var(--text-muted) !important;
+    font-weight: 500 !important;
+}
+
+.job-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.job-location {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.job-description {
+    margin-bottom: 1.5rem;
+}
+
+.job-description li {
+    margin-bottom: 0.7rem;
+    /* color: var(--text-secondary); */
+    line-height: 1.6;
+}
+
+.stats-section {
+    background: var(--bg-light);
+    border-radius: 8px;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid var(--text-muted);
+}
+
+.stats-item {
+    margin-left: 0.5rem;
+}
+
+.catch {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 2.5rem 0rem;
+    text-align: center;
+    max-width: 90%;
+}
