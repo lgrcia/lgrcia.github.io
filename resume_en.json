@@ -4,6 +4,7 @@
   "total_pubs_str": "refereed publications",
   "total_citations_str": "citations",
   "summary": "Astrophysicist and Data Scientist. From academia to industry.",
+  "catch": "Astrophysicist transitioning to industry with experience developing GPU-optimized machine learning tools, data analysis workflows, and pipelines for large-scale time-series and image processing.",
   "technical_stack": "Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.",
   "experience": [
     {

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../style.css">
     <style>
         a {
-            color: rgb(53, 116, 234);
+            color: var(--primary-color);
             text-decoration: none;
         }
 
@@ -23,48 +23,108 @@
             color: var(--link-color);
             margin-left: 10px;
         }
+
+        .contacts {
+            color: var(--link-color);
+            display: flex;
+            gap: 15px;
+        }
+
+        .contacts a {
+            color: var(--text-muted) !important;
+            font-weight: 500 !important;
+        }
+
+        .job-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .job-location {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .job-description {
+            margin-bottom: 1.5rem;
+        }
+
+        .job-description li {
+            margin-bottom: 0.7rem;
+            /* color: var(--text-secondary); */
+            line-height: 1.6;
+        }
+
+        .stats-section {
+            background: var(--bg-light);
+            border-radius: 8px;
+            padding: 0.5rem 0rem 0.5rem 1rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--text-muted);
+        }
+
+        .stats-item {
+            margin-left: 0.5rem;
+        }
+
+        .catch {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin: 2.5rem 0rem;
+            text-align: center;
+            max-width: 90%;
+        }
     </style>
 </head>
 
 <body>
     <div class="center">
         <div style="display: flex; align-items: baseline; justify-content: space-between;">
-            <h1 style="margin-bottom: 0;" class="flash">Lionel Garcia</h1>
-            <span class="contacts"><a href="./resume_en.html">en</a>/<a href="./resume_fr.html">fr</a>
+            <h1 style="margin-bottom: 1px;" class="flash">Lionel Garcia</h1>
+            <span class="contacts" style="gap:5px !important"><a href="./resume_en.html">en</a>/<a
+                    href="./resume_fr.html">fr</a>
             </span>
         </div>
-        <div class="desc" style="margin-bottom: 4px;">Astrophysicien et Data Scientist. Du monde académique vers l'industrie. </div>
-        <div class="contacts"><a href="https://github.com/lgrcia">GitHub</a> · <a
-                href="https://linkedin.com/in/lionel-garcia-626638110">Linkedin</a> · <a
+        <div class="desc" style="margin-bottom: 8px;  color: var(--text-secondary);font-weight: 400;">Astrophysicien et Data Scientist. Du monde académique vers l'industrie.
+        </div>
+        <div class="contacts"><a href="https://github.com/lgrcia">GitHub</a> <a
+                href="https://linkedin.com/in/lionel-garcia-626638110">Linkedin</a><a
                 href="https://scholar.google.com/citations?user=mBaWSQoAAAAJ&hl=en">Google Scholar</a>
         </div>
-        <div style="margin: 30px 0px;">
+        <div style="display: flex; justify-content: center;">
+            <div class="catch"> Astrophysicien en reconversion vers l’industrie, avec une expérience dans le développement d’outils d’apprentissage automatique optimisés pour GPU, de workflows d’analyse de données et de pipelines pour le traitement d’images et de séries temporelles à grande échelle. </div>
+        </div>
+        <div class="stats-section">
             <ul style="list-style-type:none; padding:0px;">
-                <li style="margin-bottom: 5px;">📄 34 publications, 777 citations.</li>
-                <li>⚙️ <span>Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.</span></li>
+                <li style="margin-bottom: 5px;">📄 <span class="stats-item">34 publications, 774 citations.</span></li>
+                <li>⚙️ <span class="stats-item">Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.</span></li>
             </ul>
         </div>
         <h2>Experience</h2>
-        <ul style="list-style-type:none;padding-left:1em;">  <li><b>Center for Computational Astrophysics – Research Fellow</b><span
-                    class="location">New York, États-Unis (2023–2025)</span></li>
-            <ul style="">  <li>Responsable d’un <a href="https://www.stsci.edu/jwst-program-info/program/?program=5799">programme scientifique</a> d’envergure avec le télescope spatial James Webb, gestion d’une équipe de 15 scientifiques.</li>  <li>Développement, publication et maintenance de <a href="https://github.com/exoplanet-dev/jaxoplanet">jaxoplanet</a> (suite de modèles pour l’analyse de séries temporelles astronomiques), <a href="https://github.com/lgrcia/nuance">nuance</a> (algorithme basé sur des processus Gaussiens pour la detection de signaux périodiques dans des séries temporelles dominées par du bruit rouge), et <a href="https://github.com/lgrcia/spotter">spotter</a> (modèle stochastique de surfaces stellaires actives). Ces outils utilisent JAX et sont accélérés sur GPU.</li>  <li>Diffusion des travaux de recherche sous forme de packages Python open-source avec documentation complète, CI/CD et tests unitaires.</li>  </ul>
-            <br>  <li><b>Université de Liège – Doctorant</b><span
-                    class="location">Belgique (2019–2023)</span></li>
-            <ul style="">  <li>Opération et maintenance d'un réseau de télescopes robotiques pour le projet <a href="https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452">SPECULOOS</a>. Développement d’un pipeline automatisé de traitement d'images. Création et maintenance de dashboards web pour la visualisation de l'analyse de données (40 utilisateurs).</li>  <li>Développement, publication et maintenance de <a href="https://github.com/lgrcia/prose">prose</a> (pipelines de traitement d’images astronomiques), <a href="https://github.com/lgrcia/twirl">twirl</a> (reconnaissance de motifs d’astérismes stellaires), et <a href="https://huggingface.co/lgrcia/ballet">ballet</a> (réseau de neurones convolutifs pour la modélisation de profils stellaires).</li>  </ul>
-            <br>  <li><b>Agence Spatiale Européenne – Ingénieur</b><span
-                    class="location">Noordwijk, Pays-Bas (2017–2018)</span></li>
-            <ul style="">  <li>Application du machine learning pour collecter des données et prédire les coûts des futures missions spatiales.</li>  </ul>
-            <br>  <li><b>CERN - Technical Student</b><span
-                    class="location">Genève, Suisse (2016–2017)</span></li>
-            <ul style="">  <li>Conception du <a href="https://github.com/lgrcia/BWS-diagnostic">workflow d’analyse de données</a> pour l’étalonnage d’un instrument du Large Hadron Collider.</li>  </ul>
-            <br> 
-        </ul>
-        <h2>Education</h2>
-        <ul style="list-style-type:none">  <li><b>Doctorat en Astrophysique – Université de Liège</b><span
-                    class="location">Belgique (2023)</span></li>  <li><b>Diplôme d’Ingénieur en systèmes optiques – Institut d’Optique</b><span
-                    class="location">Paris, France (2017)</span></li>  <li><b>Master en Informatique – Université de Bordeaux</b><span
-                    class="location">France (2017)</span></li>  <li><b>Licence en Physique – Université Paris-Saclay</b><span
-                    class="location">France (2014)</span></li>  </ul>
+        <div style="padding-left:1.4rem">  <div class="job-title">Center for Computational Astrophysics – Research Fellow</div>
+            <div class="job-location">New York, États-Unis (2023–2025)</div>
+            <ul class="job-description">  <li>Responsable d’un <a href="https://www.stsci.edu/jwst-program-info/program/?program=5799">programme scientifique</a> d’envergure avec le télescope spatial James Webb, gestion d’une équipe de 15 scientifiques.</li>  <li>Développement, publication et maintenance de <a href="https://github.com/exoplanet-dev/jaxoplanet">jaxoplanet</a> (suite de modèles pour l’analyse de séries temporelles astronomiques), <a href="https://github.com/lgrcia/nuance">nuance</a> (algorithme basé sur des processus Gaussiens pour la detection de signaux périodiques dans des séries temporelles dominées par du bruit rouge), et <a href="https://github.com/lgrcia/spotter">spotter</a> (modèle stochastique de surfaces stellaires actives). Ces outils utilisent JAX et sont accélérés sur GPU.</li>  <li>Diffusion des travaux de recherche sous forme de packages Python open-source avec documentation complète, CI/CD et tests unitaires.</li>  </ul>
+             <div class="job-title">Université de Liège – Doctorant</div>
+            <div class="job-location">Belgique (2019–2023)</div>
+            <ul class="job-description">  <li>Opération et maintenance d'un réseau de télescopes robotiques pour le projet <a href="https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452">SPECULOOS</a>. Développement d’un pipeline automatisé de traitement d'images. Création et maintenance de dashboards web pour la visualisation de l'analyse de données (40 utilisateurs).</li>  <li>Développement, publication et maintenance de <a href="https://github.com/lgrcia/prose">prose</a> (pipelines de traitement d’images astronomiques), <a href="https://github.com/lgrcia/twirl">twirl</a> (reconnaissance de motifs d’astérismes stellaires), et <a href="https://huggingface.co/lgrcia/ballet">ballet</a> (réseau de neurones convolutifs pour la modélisation de profils stellaires).</li>  </ul>
+             <div class="job-title">Agence Spatiale Européenne – Ingénieur</div>
+            <div class="job-location">Noordwijk, Pays-Bas (2017–2018)</div>
+            <ul class="job-description">  <li>Application du machine learning pour collecter des données et prédire les coûts des futures missions spatiales.</li>  </ul>
+             <div class="job-title">CERN - Technical Student</div>
+            <div class="job-location">Genève, Suisse (2016–2017)</div>
+            <ul class="job-description">  <li>Conception du <a href="https://github.com/lgrcia/BWS-diagnostic">workflow d’analyse de données</a> pour l’étalonnage d’un instrument du Large Hadron Collider.</li>  </ul>
+             </ul>
+        </div>
+        <h2>Education</h2> <div class="job-title">Doctorat en Astrophysique – Université de Liège<span class="job-location"
+                style="margin-left:0.8rem">Belgique (2023)</span></div><div class="job-title">Diplôme d’Ingénieur en systèmes optiques – Institut d’Optique<span class="job-location"
+                style="margin-left:0.8rem">Paris, France (2017)</span></div><div class="job-title">Master en Informatique – Université de Bordeaux<span class="job-location"
+                style="margin-left:0.8rem">France (2017)</span></div><div class="job-title">Licence en Physique – Université Paris-Saclay<span class="job-location"
+                style="margin-left:0.8rem">France (2014)</span></div>
     </div>
 </body>
 

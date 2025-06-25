@@ -1,6 +1,11 @@
 :root {
     --link-color: rgb(142, 142, 142);
-    --blue: rgb(53, 116, 234);
+    --primary-color: #4584e8;
+    --secondary-color: #64748b;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --bg-light: #f8fafc;
 }
 
 pre {
@@ -9,7 +14,7 @@ pre {
 
 body {
     margin: 0 auto;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     font-size: 16px;
     background-color: #ffffff;
@@ -64,16 +69,7 @@ h2 {
 
 .flash {
     background: #2A7B9B;
-    background: linear-gradient(90deg, rgb(32, 133, 204) 0%, rgb(67, 187, 117) 80%);
+    background: linear-gradient(90deg, var(--primary-color) 0%, rgb(67, 187, 117) 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.contacts {
-    color: var(--link-color);
-}
-
-.contacts a {
-    color: var(--link-color) !important;
-    text-decoration: underline !important;
 }
