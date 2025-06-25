@@ -126,7 +126,7 @@ a {
 .stats-section {
     background: var(--bg-light);
     border-radius: 8px;
-    padding: 0.5rem 0rem 0.5rem 1rem;
+    padding: 0.1rem 0rem 0.1rem 1rem;
     margin-bottom: 1.5rem;
     border-left: 4px solid var(--text-muted);
 }
