@@ -2,17 +2,23 @@
 
 Astrophysicist and Data Scientist. From academia to industry.
 
-📄 34 refereed publications, 774 citations.
+📄 35 refereed publications, 946 citations.
 
 ⚙️ Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.
 
 ## Experience
 
 
+**Freelance - Scientific Software Development**, *France (2025–Present)*
+
+  - Providing scientific software development services to academic and industrial clients. Specializing in data analysis workflows and pipeline development.
+  - Currently working on astronomy-relate projects.
+
+
 **Center for Computational Astrophysics – Research Fellow**, *New York City, USA (2023–2025)*
 
   - Led a high-impact [scientific program](https://www.stsci.edu/jwst-program-info/program/?program=5799) with the James Webb Space Telescope, managing a team of 15 scientists.
-  - Developed, released, and maintained [jaxoplanet](https://github.com/exoplanet-dev/jaxoplanet) (a suite of models to analyze large astronomical time-series datasets), [nuance](https://github.com/lgrcia/nuance) (a Gaussian process algorithm to detect periodic signals in time-series dominated by red noise), and [spotter](https://github.com/lgrcia/spotter) (a framework to stochastically model active stellar surfaces). These tools are powered by JAX and optimized for GPUs/TPUs.
+  - Developed, released, and maintained [jaxoplanet](https://github.com/exoplanet-dev/jaxoplanet) (a suite of models to analyze large astronomical time-series datasets), [nuance](https://github.com/lgrcia/nuance) (a Gaussian process algorithm to detect periodic signals in time-series dominated by red noise), and [spotter](https://github.com/lgrcia/spotter) (a framework to stochastically model active stellar surfaces). These tools are powered by JAX, optimized for GPUs/TPUs, and used in the context of Bayesian modeling, inference and machine learning applications.
   - Published all research as open-source Python packages with comprehensive documentation, CI/CD, and unit testing.
 
 

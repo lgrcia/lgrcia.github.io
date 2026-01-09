@@ -8,11 +8,19 @@
   "technical_stack": "Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.",
   "experience": [
     {
+      "title": "Freelance – Développement de Logiciels Scientifiques",
+      "location": "France (2025–Présent)",
+      "description": [
+        "Prestation de services de développement de logiciels scientifiques pour des clients académiques et industriels. Spécialisation dans les workflows d'analyse de données et le développement de pipelines.",
+        "Travail actuellement sur des projets liés à l'astronomie."
+      ]
+    },
+    {
       "title": "Center for Computational Astrophysics – Research Fellow",
       "location": "New York, États-Unis (2023–2025)",
       "description": [
         "Responsable d’un [programme scientifique](https://www.stsci.edu/jwst-program-info/program/?program=5799) d’envergure avec le télescope spatial James Webb, gestion d’une équipe de 15 scientifiques.",
-        "Développement, publication et maintenance de [jaxoplanet](https://github.com/exoplanet-dev/jaxoplanet) (suite de modèles pour l’analyse de séries temporelles astronomiques), [nuance](https://github.com/lgrcia/nuance) (algorithme basé sur des processus Gaussiens pour la detection de signaux périodiques dans des séries temporelles dominées par du bruit rouge), et [spotter](https://github.com/lgrcia/spotter) (modèle stochastique de surfaces stellaires actives). Ces outils utilisent JAX et sont accélérés sur GPU.",
+        "Développement, publication et maintenance de [jaxoplanet](https://github.com/exoplanet-dev/jaxoplanet) (suite de modèles pour l’analyse de séries temporelles astronomiques), [nuance](https://github.com/lgrcia/nuance) (algorithme basé sur des processus Gaussiens pour la detection de signaux périodiques dans des séries temporelles dominées par du bruit rouge), et [spotter](https://github.com/lgrcia/spotter) (modèle stochastique de surfaces stellaires actives). Ces outils utilisent JAX, optmisé pour l'éxecution sur GPU, et utilisés dans le cadre de modélisations Bayésiennes, d'inférence et de machine learning.",
         "Diffusion des travaux de recherche sous forme de packages Python open-source avec documentation complète, CI/CD et tests unitaires."
       ]
     },
