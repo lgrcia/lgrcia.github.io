@@ -2,7 +2,7 @@
 
 Astrophysicist and Data Scientist. From academia to industry.
 
-📄 35 refereed publications, 946 citations.
+📄 35 refereed publications, 948 citations.
 
 ⚙️ Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.
 
@@ -12,7 +12,7 @@ Astrophysicist and Data Scientist. From academia to industry.
 **Freelance - Scientific Software Development**, *France (2025–Present)*
 
   - Providing scientific software development services to academic and industrial clients. Specializing in data analysis workflows and pipeline development.
-  - Currently working on astronomy-relate projects.
+  - Currently working on astronomy-related projects.
 
 
 **Center for Computational Astrophysics – Research Fellow**, *New York City, USA (2023–2025)*

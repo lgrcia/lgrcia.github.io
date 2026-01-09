@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lionel Garcia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Author: Lionel Garcia, personal website">
+    <meta name="keywords" content="Lionel Garcia, Astronomy, Astro, Exoplanets, Code, Academia, Research, Science">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+            --border-light: #e2e8f0;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: #ffffff;
+            font-size: 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            background: white;
+            box-shadow: var(--shadow-sm);
+            border-radius: 12px;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+                padding: 1.5rem 1rem;
+            }
+        }
+
+        .header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .name-section {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--primary-color), #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .summary {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 0.25rem;
+            align-items: center;
+            background: var(--bg-light);
+            border-radius: 6px;
+            padding: 0.25rem;
+            border: 1px solid var(--border-light);
+        }
+
+        .lang-switcher a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.375rem 0.75rem;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.875rem;
+            transition: all 0.2s ease;
+        }
+
+        .lang-switcher a:hover {
+            color: var(--primary-color);
+            background: white;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .contacts {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .contacts a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .contacts a:hover {
+            color: var(--primary-color);
+        }
+
+        .stats-section {
+            background: var(--bg-light);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .stats-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .stats-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .emoji {
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 2.5rem 0 1.5rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-light);
+        }
+
+        .experience-list,
+        .education-list {
+            list-style: none;
+        }
+
+        .job-item,
+        .edu-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--border-light);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .job-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .job-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .job-location {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .job-description {
+            list-style: none;
+        }
+
+        .job-description li {
+            margin-bottom: 0.75rem;
+            padding-left: 1rem;
+            position: relative;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .job-description li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .job-description li:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        .education-list .edu-item {
+            padding: 1rem 1.5rem;
+        }
+
+        .edu-degree {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .edu-location {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .contacts {
+                justify-content: center;
+            }
+
+            .stats-section {
+                padding: 1rem;
+            }
+
+            .job-item,
+            .edu-item {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="name-section">
+                <h1>Lionel Garcia</h1>
+                <div class="summary">Astrophysicist and Data Scientist. From academia to industry.</div>
+                <div class="contacts">
+                    <a href="https://github.com/lgrcia">GitHub</a>
+                    <a href="https://linkedin.com/in/lionel-garcia-626638110">LinkedIn</a>
+                    <a href="https://scholar.google.com/citations?user=mBaWSQoAAAAJ&hl=en">Google Scholar</a>
+                </div>
+            </div>
+            <div class="lang-switcher">
+                <a href="./resume_en.html">EN</a>
+                <a href="./resume_fr.html">FR</a>
+            </div>
+        </header>
+        <div> Astrophysicist transitioning to industry with experience developing GPU-optimized machine learning tools, data analysis workflows, and pipelines for large-scale time-series and image processing. </div>
+        <div class="stats-section">
+            <ul class="stats-list">
+                <li>
+                    <span class="emoji">📄</span>
+                    <span>34 refereed publications, 774 citations.</span>
+                </li>
+                <li>
+                    <span class="emoji">⚙️</span>
+                    <span>Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.</span>
+                </li>
+            </ul>
+        </div>
+        <section>
+            <h2>Experience</h2>
+            <ul class="experience-list">  <li class="job-item">
+                    <div class="job-title">Center for Computational Astrophysics – Research Fellow</div>
+                    <div class="job-location">New York City, USA (2023–2025)</div>
+                    <ul class="job-description">  <li>Led a high-impact <a href="https://www.stsci.edu/jwst-program-info/program/?program=5799">scientific program</a> with the James Webb Space Telescope, managing a team of 15 scientists.</li>  <li>Developed, released, and maintained <a href="https://github.com/exoplanet-dev/jaxoplanet">jaxoplanet</a> (a suite of models to analyze large astronomical time-series datasets), <a href="https://github.com/lgrcia/nuance">nuance</a> (a Gaussian process algorithm to detect periodic signals in time-series dominated by red noise), and <a href="https://github.com/lgrcia/spotter">spotter</a> (a framework to stochastically model active stellar surfaces). These tools are powered by JAX and optimized for GPUs/TPUs.</li>  <li>Published all research as open-source Python packages with comprehensive documentation, CI/CD, and unit testing.</li> 
+                    </ul>
+                </li>  <li class="job-item">
+                    <div class="job-title">University of Liège – Graduate Research Assistant</div>
+                    <div class="job-location">Belgium (2019–2023)</div>
+                    <ul class="job-description">  <li>Maintained and remotely operated large robotic telescopes for the <a href="https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452">SPECULOOS</a> project. Developed a fully automated image processing pipeline running daily to transform raw data into scientific products. Built and maintained web dashboards for data analysis monitoring and visualization (40 users).</li>  <li>Developed, released, and maintained <a href="https://github.com/lgrcia/prose">prose</a> (astronomical image processing pipelines), <a href="https://github.com/lgrcia/twirl">twirl</a> (pattern matching for stellar asterisms), and <a href="https://huggingface.co/lgrcia/ballet">ballet</a> (CNN for stellar PSF fitting).</li> 
+                    </ul>
+                </li>  <li class="job-item">
+                    <div class="job-title">European Space Agency – Engineer</div>
+                    <div class="job-location">Noordwijk, Netherlands (2017–2018)</div>
+                    <ul class="job-description">  <li>Applied machine learning to collect data and predict costs for future space missions.</li> 
+                    </ul>
+                </li>  <li class="job-item">
+                    <div class="job-title">CERN – Technical Student</div>
+                    <div class="job-location">Geneva, Switzerland (2016–2017)</div>
+                    <ul class="job-description">  <li>Designed the <a href="https://github.com/lgrcia/BWS-diagnostic">data analysis workflow</a> for calibrating a Large Hadron Collider instrument.</li> 
+                    </ul>
+                </li>  </ul>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul class="education-list">  <li class="edu-item">
+                    <div class="edu-degree">PhD in Astronomy – University of Liège</div>
+                    <div class="edu-location">Belgium (2023)</div>
+                </li>  <li class="edu-item">
+                    <div class="edu-degree">Engineering Degree in Optical Systems – Institut d'Optique</div>
+                    <div class="edu-location">Paris, France (2017)</div>
+                </li>  <li class="edu-item">
+                    <div class="edu-degree">Master in Computer Science – University of Bordeaux</div>
+                    <div class="edu-location">France (2017)</div>
+                </li>  <li class="edu-item">
+                    <div class="edu-degree">License in Physics – University Paris-Saclay</div>
+                    <div class="edu-location">France (2014)</div>
+                </li>  </ul>
+        </section>
+    </div>
+</body>
+
+</html>
