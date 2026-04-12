@@ -1,0 +1,78 @@
+{
+  "language": "en",
+  "name": "Lionel Garcia",
+  "total_pubs_str": "refereed publications",
+  "total_citations_str": "citations",
+  "summary": "Full-stack Data Scientist. Former Astrophysicist.",
+  "catch": "Full-stack Data Scientist with experience developing GPU-optimized machine learning tools, data analysis workflows, web app and pipelines for large-scale time-series and image processing.",
+  "technical_stack": {
+    "languages": "Python, C, C++, HTML/CSS/JS, SQL, Rust",
+    "frameworks": "JAX, TensorFlow, VueJS, SvelteKit",
+    "tools": "git, GitHub CI/CD, Airflow, Docker"
+  },
+  "general": "During all my experiences, I was able to transform teams insights by building intuitive visualizations and develop internal tools that would change entire workflows. I am often praised for my pedagogic skills, often including illustrations and beautiful schematics in my work. My keynotes are know to be very visual and highly entertaining and clear. I developed this skill further during my years in research, as the writing of scientific papers is a very enriching communication challenge. In opposition to my fellows, my soft skill are one of my main strengths.",
+  "experience": [
+    {
+      "title": "Freelance - Scientific Software Development",
+      "location": "France (2025–Present)",
+      "description": [
+        "Developed a web platform that allow students to remotely control robotic telescopes located around the world. This includes frontend using sveltekit. Proper authentication. I was fully in charge of design and identity creation on this project. Most of the backend is python and data processing is managed using airflow.",
+        "As part of my independent activities I started develop a rust module for high-performance astronomical image processing.",
+        "Currently working on astronomy-related projects."
+      ]
+    },
+    {
+      "title": "Center for Computational Astrophysics – Research Fellow",
+      "location": "New York City, USA (2023–2025)",
+      "description": [
+        "Developed a suite of models to analyze large astronomical time-series datasets ([jaxoplanet](https://github.com/exoplanet-dev/jaxoplanet)), an ML algorithm to detect faint signals in time-series dominated by red noise ([nuance](https://github.com/lgrcia/nuance)), and a framework to efficiently model spherical surfaces (stars) ([spotter](https://github.com/lgrcia/spotter)). These tools are powered by JAX, optimized for GPUs/TPUs, and used in the context of Bayesian modeling, inference and machine learning applications.",
+        "Led a high-impact [scientific program](https://www.stsci.edu/jwst-program-info/program/?program=5799) with the James Webb Space Telescope, managing a team of 15 scientists.",
+        "I focused a lot on open source scientific software. Development but also release documentation and maintenance",
+        "I was in charge of few master students and a PhD student.",
+        "Applied mathematics was a big part of my work there.",
+      ]
+    },
+    {
+      "title": "University of Liège – Graduate Research Assistant",
+      "location": "Belgium (2019–2023)",
+      "description": [
+        "Developed astronomical image processing pipelines ([prose](https://github.com/lgrcia/prose)), a pattern matching algorithm for stellar asterisms ([twirl](https://github.com/lgrcia/twirl)), and a deep learning model to process stars images ([ballet](https://huggingface.co/lgrcia/ballet))",
+        "Maintained and remotely operated large robotic telescopes for the [SPECULOOS](https://www.speculoos.uliege.be/cms/c_4259452/en/speculoos?id=c_4259452) project. Developed a fully automated image processing pipeline running daily to transform raw data into scientific products. Built and maintained web dashboards for data analysis monitoring and visualization (40 users).",
+        "During my years as a PhD I was also a teaching assistant, with more that 150 hours of teaching a year in subjects like 'Introduction to Astronomy (Master 2)',  'Mathematics for the modeling of the environment (Oceanology Master 2') or 'Mechanics 101 (Undergrad)'."
+      ]
+    },
+    {
+      "title": "European Space Agency – Engineer",
+      "location": "Noordwijk, Netherlands (2017–2018)",
+      "description": [
+        "Applied machine learning to collect data and predict costs for future space missions."
+      ]
+    },
+    {
+      "title": "CERN – Technical Student",
+      "location": "Geneva, Switzerland (2016–2017)",
+      "description": [
+        "Designed the [data analysis workflow](https://github.com/lgrcia/BWS-diagnostic) for calibrating a Large Hadron Collider instrument.",
+        "This project involved developing the hardware for the instrument, assembling it, developing the control and testing software and analyzing the prototype performances to iterate over its design. Technologies involved included an optical encoder with novel precisions, lasers, motors and different sensors. The prototype bench was controlled in lab view (that I don't want to work with again) and I did most of my developments in Python. I worked closely to electrical and mechanical engineers."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "PhD in Astronomy – University of Liège",
+      "location": "Belgium (2023)"
+    },
+    {
+      "degree": "Engineering Degree in Optical Systems – Institut d'Optique",
+      "location": "Paris, France (2017)"
+    },
+    {
+      "degree": "Master in Computer Science – University of Bordeaux (master centered in Machine learning for image and sound)",
+      "location": "France (2017)"
+    },
+    {
+      "degree": "License in Physics – University Paris-Saclay",
+      "location": "France (2014)"
+    }
+  ]
+}

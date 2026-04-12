@@ -46,8 +46,12 @@
   #set text(size: 10pt, weight: 400)
   #v(7pt)
   📄 #h(3pt) #stats.total #data.total_pubs_str, #stats.citations #data.total_citations_str.
+  #v(-2pt)
+  { } #h(3pt) #gray(render_item(data.technical_stack.languages.replace(", ", " - ").replace(",", " - ")))
   #v(-5pt)
-  ⚙️ #h(3pt) #gray(render_item(data.technical_stack))
+  ⚙️ #h(3pt) #gray(render_item(data.technical_stack.frameworks.replace(", ", " - ").replace(",", " - ")))
+  #v(-5pt)
+  📦 #h(3pt) #gray(render_item(data.technical_stack.tools.replace(", ", " - ").replace(",", " - ")))
   #v(7pt)
 ]
 

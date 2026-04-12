@@ -5,7 +5,11 @@
   "total_citations_str": "citations",
   "summary": "Astrophysicien et Data Scientist. Du monde académique vers l'industrie.",
   "catch": "Astrophysicien en reconversion vers l’industrie, avec une expérience dans le développement d’outils d’apprentissage automatique optimisés pour GPU, de workflows d’analyse de données et de pipelines pour le traitement d’images et de séries temporelles à grande échelle.",
-  "technical_stack": "Python, C, C++, git, GitHub CI/CD, JAX, TensorFlow, HTML/CSS/JS, VueJS, Svelte, SQL.",
+  "technical_stack": {
+    "languages": "Python, C, C++, HTML/CSS/JS, SQL",
+    "frameworks": "JAX, TensorFlow, VueJS, SvelteKit",
+    "tools": "git, GitHub CI/CD, Airflow, Docker"
+  },
   "experience": [
     {
       "title": "Freelance – Développement de Logiciels Scientifiques",
